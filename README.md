@@ -37,6 +37,10 @@ body {
 }
 ```
 
+Kết quả:
+
+![Ảnh con sóc](./ Link ảnh...)
+
 ### Tài liệu:
 - https://topdev.vn/blog/markdown-la-gi-cach-su-dung-markdown/
 - https://www.w3schools.com/html/html_headings.asp
