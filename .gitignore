@@ -1,0 +1,9 @@
+# để chọn những file không muốn đẩy lên git
+
+*.txt
+
+content/
+
+**/.DS_Store
+
+**/.vscode
