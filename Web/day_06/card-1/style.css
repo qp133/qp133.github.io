@@ -1,0 +1,102 @@
+/* Clear 1 số thuộc tính về trang thái ban đầu */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Auto xuất hiện nếu trang web có ảnh */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: all 1s;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    width: 320px;
+    height: 339px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+    margin: auto;
+    margin-top: 50px;
+
+    border-radius: 5px;
+    overflow: hidden;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.content {
+    padding: 20px;
+    background-color: #fff;
+    
+    transition: all 1s;
+    opacity: 0;
+
+    position: relative;
+    top: 200px;
+    right: 0;
+
+    z-index: 3;
+}
+
+.title {
+    font-size: 19px;
+    color : #464646;
+    font-weight: 400;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.type, .rating {
+    font-size: 14px;
+    color: #757575;
+    font-weight: 100;
+}
+
+.type {
+    margin: 14px 0;
+}
+
+.rating span {
+    color: #ffd600;
+}
+
+.card:hover .content {
+    position: relative;
+    top: 0;
+    right: 0;
+
+    opacity: 1;
+}
+
+/* Khi hover vào .card thì có 2 hiệu ứng xảy ra:
+1. Scale ảnh lên 1.2 (sử dụng transform: scale)
+2. Phần nội dung đặt ở bên ngoài, khi hover vào .card thì xuát hiện như h2, p đã làm ở ví dụ trước
+(sử dụng translate hoặc position) */
+
+.card:hover img {
+    transform: scale(1.2);
+}
+
+
