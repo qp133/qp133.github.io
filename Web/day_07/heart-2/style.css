@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+
+    background-color: bisque;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.heart {
+    width: 60px;
+    height: 130px;
+
+    border-radius: 100% 100% 0 0;
+
+    background-color: red;
+}
+
+
+.heart::before {
+    content: "";
+
+    width: 60px;
+    height: 130px;
+
+    border-radius: 100% 100% 0 0;
+
+    background-color: blue;
+
+    position: absolute;
+
+    transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}

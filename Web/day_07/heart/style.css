@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:bisque;
+    
+}
+
+.icon {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon .fa-solid {
+    color: red;
+    font-size: 200px;
+
+    animation: heart 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes heart {
+    0% {
+        font-size: 200px;
+    }
+    50% {
+        font-size: 270px;
+    }
+    100% {
+        font-size: 200px;
+    }
+}
