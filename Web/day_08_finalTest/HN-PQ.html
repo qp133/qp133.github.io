@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <!-- Link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Link CSS thư viện -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link CSS tự viết -->
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        .container {
+            padding-top: 80px;
+            margin: 0 80px;
+        }
+        .tour {
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            /* align-items: center;
+            justify-content: center; */
+
+        }
+
+        .tour-info {
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .tour-title {
+            width: 45%;
+            border: 2px solid #f58220;
+        }
+
+        .tour-title-1 {
+            padding: 15px;
+        }
+        .tour-title-1 p {
+            margin: 10px 0;
+        }
+        .tour-title-1 ul {
+            margin: 0 20px;
+        }
+        .tour-title-1 ul li {
+            margin: 5px 0;
+        }
+        .tour-fr-price {
+            background-color: #f58220;
+            padding: 15px;
+        }
+        .tour-price h2 {
+            color: #fff;
+            margin-left: 20px;
+        }
+
+        .tour-content{
+            width: 53%;
+            border: 2px solid #f58220;
+        }
+
+        .tour-content-title {
+            padding: 15px 15px 0 15px;
+        }
+        .tour-content-text {
+            padding: 15px;
+            text-align: justify;
+        }
+        .tour-content-text h3 {
+            padding: 10px 0;
+        }
+        .tour-content-text ul {
+            margin-left: 30px;
+        }
+        .tour-content-text ul li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <p><a href="/qp133.github.io/Web/day_08_finalTest/index.html">SHIBA TOURISTS</a></p>
+        </div>
+
+        <div class="sidebar">
+            <div class="header-menu">
+                <ul>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/index.html">TRANG CHỦ</a></li>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/duLichTrongNuoc.html">DU LỊCH TRONG NƯỚC</a></li>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/duLichNuocNgoai.html">DU LỊCH NƯỚC NGOÀI</a></li>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/blog.html">BLOG</a></li>
+                </ul>
+            </div>
+            
+            <!-- Avatar -->
+            <div class="avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="tour">
+            <div class="owl-carousel">
+                <div class="banner">
+                    <img src="https://images.unsplash.com/photo-1572572216428-91def7b78278?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1156&q=80" alt="Tour image">
+                </div>
+        
+                <div class="banner">
+                    <img src="https://images.unsplash.com/photo-1609597254239-d9ace3c0b39c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=917&q=80" alt="Tour image">
+                </div>
+        
+                <div class="banner">
+                    <img src="https://images.unsplash.com/photo-1634043270873-f2f830e5d4bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=899&q=80" alt="Tour image">
+                </div>
+            </div>
+            <div class="tour-info">
+                <div class="tour-title">
+                    <div class="tour-title-1">
+                        <h2>Hà Nội - Phú Quốc 4 ngày 3 đêm</h2>
+                        <p><b>Thông tin tour:</b></p>
+                        <ul>
+                            <li>Mã tour: 15553</li>
+                            <li>Thời gian: 4 ngày 3 đêm</li>
+                            <li>Khởi hành: 10/6 – 30/6/2022</li>
+                            <li>Vận chuyển: Xe du lịch</li>
+                            <li>Xuất phát từ: Hà Nội</li>
+                        </ul>
+                    </div>
+                    <div class="tour-title-2">
+                        <div class="tour-fr-price">
+                            <div class="tour-price">
+                                <h2>Giá từ 4,990,000đ</h2>
+                            </div>
+                            <div class="more-info">
+                                <button class="learn-more-1">
+                                    <a href="https://dantri.com.vn">
+                                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                                        <p class="button-text">ĐẶT TOUR</p>
+                                    </a>
+                                </button>
+                                <button class="learn-more-1">
+                                    <a href="https://dantri.com.vn">
+                                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                                        <p class="button-text">HỖ TRỢ</p>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-content">
+                    <div class="tour-content-title">
+                        <h2>Lịch trình:</h2>
+                    </div>
+                    <div class="tour-content-text">
+                        <h3>NGÀY 1: PHÚ QUỐC - KHÁM PHÁ ĐÔNG ĐẢO</h3>
+                        <ul>
+                            <li>Sáng: Xe và hướng dẫn viên (HDV) Du Lịch Việt đón quý khách tại điểm hẹn khởi hành đi sân bay Nội Bài. HDV giúp quý khách làm thủ tục đáp chuyến bay VJ459 lúc 07h05 đi Phú Quốc
+                                <ul>
+                                    <li>09h05: Đến Phú Quốc, hướng dẫn viên đón quý khách tham quan:</li>
+                                    <li>Suối Tranh: một bức tranh sơn thủy của xứ đảo (tháng 5 đến tháng 10)</li>
+                                    <li>Làng chài Hàm Ninh: đi dạo cầu cảng Hàm Ninh - tự do thưởng thức hải sản tươi sống như: Ghẹ Xanh, Sò Dương, Tôm Tít (thưởng thức hải sản tươi sống tại đây – chi phí tự túc).</li>
+                                </ul>
+                            </li>
+                            <li>Trưa: Qúy khách ăn trưa tại nhà hàng, sau đó về khách sạn nhận phòng nghỉ ngơi (nhận phòng khách sạn từ sau 14h00)</li>
+                            <li>Chiều: HDV đưa đoàn đi tham quan những điểm sau:
+                                <ul>
+                                    <li>Vườn tiêu Phú Quốc – nông sản nổi tiếng của Phú Quốc.</li>
+                                    <li>Nhà thùng nước mắm: tìm hiểu quy trình chế biến nước mắm Phú Quốc hảo hạng.</li>
+                                    <li>Cơ Sở Rượu Sim: loại rượu được lên men từ Sim rừng Phú Quốc, rất độc đáo và thơm ngon.</li>
+                                    <li>Viếng Dinh Cậu – Dinh Bà: cầu phúc lộc bình an, ngắm Hoàng Hôn</li>
+                                </ul>
+                            </li>
+                            <li>Tối: Qúy khách ăn tối tại nhà hàng, tự do dạo chơi chợ đêm. Nghỉ đêm tại khách sạn.</li>
+                        </ul>
+                        <h3>NGÀY 2: NAM ĐẢO - CÂU CÁ VÀ BƠI NGẮM SAN HÔ</h3>
+                        <ul>
+                            <li>Sáng: Qúy khách ăn sáng tại khách sạn, sau đó khởi hành đi tham quan:
+                                <ul>
+                                    <li>Cơ sở nuôi cấy ngọc trai – các trang sức bằng Ngọc trai chính hiệu được nuôi cấy tại Phú Quốc.</li>
+                                    <li>Di chuyển ra bến cảng Lên tàu tham gia chương trình câu cá – bơi ngăm san hô (tàu được trang bị đầy đủ áo phao, mồi câu, ống câu, kiếng bơi…) quý khách trải nghiệm câu các loài cá biển: cá hồng, chàm, mú…khám phá đại dương với chương trình bơi ngắm san hô.</li>
+                                </ul>
+                            </li>
+                            <li>Trưa: Qúy khách ăn trưa trên tàu, vào bãi sao tự do tắm biển, nghỉ ngơi…chiều về thăm:
+                                <ul>
+                                    <li>KDL Bãi Sao – một trong những bãi biển đẹp của Phú Quốc, tắm biển nghỉ ngơi, thư giãn…</li>
+                                    <li>Tham quan di tích lịch sử nhà tù Phú Quốc.</li>
+                                    <li>Chùa Hộ Quốc: ngôi chùa lớn khang trang nhất xứ đảo, lưng tựa núi nhìn ra biển – đầy yên bình và thanh thản.</li>
+                                </ul>
+                            </li>
+                            <li>Chiều: Đoàn quay về khách sạn nghỉ ngơi</li>
+                            <li>Tối: Qúy khách ăn tối tại nhà hàng. Nghỉ đêm tại khách sạn.</li>
+                        </ul>
+                        <h3>NGÀY 3: VINPEARL LAND - SAFARI VÀ CÁP TREO ĐẢO HÒN THƠM</h3>
+                        <ul>
+                            <li>Sáng: Ăn sáng tại khách sạn – Qúy khách lựa chọn trải nghiệm thú vị tại một trong các điểm sau:
+                                <ul>
+                                    <li>Lựa chọn 1:  Khu vui chơi Vinpearlland Phú Quốc: với khu vơi chơi trong nhà và ngoài trời đầy cảm giác mạnh như: tháp rơi tự do, đu quay lộn đầu, đĩa quay, xe điện đụng…Khám phá thủy cung với nhiều sinh vật quý hiếm cùng các show diễn hấp dẫn như: Nàng tiên cá, cho cá mập ăn, tắm công viên nước với đường trượt siêu lòng chảo, đường trượt lốc xoáy, phim 5D, biểu diễn nhạc nước…</li>
+                                    <li>Lựa chọn 2: Khám phá Safari đầu tiên tại Việt Nam: đặc sắc với 30 phút ở vườn thú mở tham quan bằng xe chuyên dụng quý khách trải nghiệm đặc biệt khi đi rất gần các loài động vật hoang dã, các loài thú quý hiếm trên thế giới có mặt tại đây: Hổ bengal, Tê giác trắng, Tinh Tinh, Hồng Hạc…hay trải nghiệm cho động vật ăn, chụp ảnh…</li>
+                                    <li>Lựa chọn 3: Trải nghiệm Cáp Treo Hòn Thơm: Thuộc hệ thống Sun World – thương hiệu vui chơi giải trí của Tập đoàn Sun Group, Tổ hợp Sun World Hon Thom Nature Park đem đến trải nghiệm về một thế giới giải trí sôi động và ngập tràn hứng khởi. Giai đoạn I của Tổ hợp đã chính thức khai trương ngày 4/2/2018, với hệ thống cáp treo Hòn Thơm được Tổ chức Guinness World Records vinh danh “Cáp treo vượt biển dài nhất thế giới – 7.899,9m”. Cáp treo Hòn Thơm nối thị trấn An Thới tới Hòn Thơm – hòn đảo xanh màu rừng già và nguyên nét hoang sơ như chưa từng có bàn tay con người chạm đến.</li>
+                                </ul>
+                            </li>
+                            <li>Trưa: Quý khách ăn trưa tự túc – Tiếp tục vui chơi và tham quan</li>
+                            <li>Chiều: Qúy khách trở về khách sạn nghỉ ngơi – Ăn tối tại nhà hàng và nghỉ đêm tại khách sạn</li>
+                        </ul>
+                        <h3>NGÀY 4: TẠM BIỆT PHÚ QUỐC</h3>
+                        <ul>
+                            <li>Sáng: Quý khách ăn sáng tại khách sạn, tự do mua sắm tại chợ Dương Đông cho đến giờ trả phòng.
+                                <ul>
+                                    <li>10h30: Qúy khách làm thủ tục trả phòng, sau đó ăn trưa tại nhà hàng</li>
+                                    <li>14h00: Xe đưa đoàn ra sân bay làm thủ tục đáp chuyến bay VJ456 chuyến 16h55 về Nội Bài.
+                                        Về đến sân bay Nội Bài xe đón quý khách trở lại điểm đón ban đầu. Chia tay quý khách và hẹn gặp lại trong những chuyến đi sau.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="email-promo">
+        <p class="email-text">Hãy để lại email để nhận được những thông tin ưu đãi tốt nhất!</p>
+        <div class="email-button">
+            <input type="text" class="emailPromo" placeholder="Nhập email">
+            <button type="submit" class="email-register">Đăng ký ngay!</button>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-frame">
+
+            <div class="fcontent">
+                <h4 class="title-1">shiba tourist</h4>
+                <div class="content-footer">
+                    <ul>
+                        <li><p><b>Công ty TNHH Du lịch Shiba</b></p></li>
+                        <li><p>Website: shibatourist.com.vn</p></li>
+                        <li><p>GIẤY PHÉP KINH DOANH</p></li>
+                        <li><p>Số GP/ No: 79-042/ 2022/ TCDL – GPLHQT</p></li>
+                        <li><p>Do Tổng Cục Du Lịch cấp ngày 29/5/2022</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">thông tin</h4>
+                <div class="content-footer">
+                    <ul>
+                        <li><p><a href="">Tạp chí du lịch</a></p></li>
+                        <li><p><a href="">Cẩm nang du lịch</a></p></li>
+                        <li><p><a href="">Tin tức</a></p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">hỗ trợ</h4>
+                <div class="content-footer">
+                    <ul>
+                        <ul>
+                            <li><p><a href="">Chính sách đặt tour</a></p></li>
+                            <li><p><a href="">Chính sách bảo mật</a></p></li>
+                            <li><p><a href="">Trợ giúp</a></p></li>
+                            <li><p><a href="">Tuyển dụng</a></p></li>
+                            <li><p><a href="">Về chúng tôi</a></p></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">địa chỉ</h4>
+                <div class="content-footer">
+                    <div class="last-content-footer">
+                        <ul>
+                            <li><p>Trụ sở chính: 239A Hoàng Văn Thụ, Phường 8, Quận Phú Nhuận, TP. Hồ Chí Minh.</p></li>
+                            <li><p>Chi nhánh Hà Nội: 44 Tràng Tiền, Quận Hoàn Kiếm, Hà Nội</p></li>
+                            <li><p>Điện thoại: 028 73056789</p></li>
+                            <li><p> Hotline: 1900 1177</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">kết nối</h4>
+                <div class="content-footer">
+                    <div class="last-content-footer">
+                        <ul class="ul-footer">
+                            <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <h4 class="title-1 last-f-title">chứng nhận</h4>
+                <div class="content-footer">
+                    <div class="last-content-footer">
+                        <ul class="ul-footer-1">
+                            <li><img src="https://dulichviet.com.vn/images/dmca.png" alt="DMCA-certificate" class="footer-icon"></li>
+                            <li><img src="https://dulichviet.com.vn/images/congthuong.png" alt="BCT-certificate" class="footer-icon"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="bottom-page">
+        <div class="copyright">
+            <p>© Copyright 2022 by <a href="./index.html">SHIBATOURIST</a>. All Rights Reserved</p>
+        </div>
+        <div class="copyright-name">
+            <p>Web desgined by QP</p>
+        </div>
+    </div>
+
+    <!-- Link JS của thư viện -->
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            items: 1,
+        })
+    </script>
+</body>
+</html>
