@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Link CSS tự viết -->
-    <link rel="stylesheet" href="/qp133.github.io/Web/day_08_finalTest/Tours/TourTrongNuoc/style.css">
+    <link rel="stylesheet" href="./style.css">
 
     <style>
         .container {
@@ -95,21 +95,62 @@
         .tour-content-text ul li {
             margin: 5px 0;
         }
+        .more-info {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .learn-more-1 {
+            margin-top: 10px;
+            width: 200px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 1s;
+
+            background-color: #005baa;
+        }
+
+        .learn-more-1 a {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #fff;
+            font-weight: bold;
+
+            transition: all 1s;
+        }
+        .learn-more-1:hover{
+            background-color: #fff;
+            color: #005baa;
+            opacity: 1;
+        }
+        .learn-more-1:hover a{
+            color: #005baa;
+        }
+        .button-text {
+            padding-left: 10px;
+        }
+
     </style>
 </head>
 <body>
     <div class="header">
         <div class="logo">
-            <p><a href="/qp133.github.io/Web/day_08_finalTest/index.html">SHIBA TOURISTS</a></p>
+            <p><a href="./index.html">VIETNAM TOURISTS</a></p>
         </div>
 
         <div class="sidebar">
             <div class="header-menu">
                 <ul>
-                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/index.html">TRANG CHỦ</a></li>
-                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/duLichTrongNuoc.html">DU LỊCH TRONG NƯỚC</a></li>
-                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/duLichNuocNgoai.html">DU LỊCH NƯỚC NGOÀI</a></li>
-                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/blog.html">BLOG</a></li>
+                    <li class="header-menu-item"><a href="./index.html">TRANG CHỦ</a></li>
+                    <li class="header-menu-item"><a href="./duLichTrongNuoc.html">DU LỊCH TRONG NƯỚC</a></li>
+                    <li class="header-menu-item"><a href="./duLichNuocNgoai.html">DU LỊCH NƯỚC NGOÀI</a></li>
+                    <li class="header-menu-item"><a href="./blog.html">BLOG</a></li>
                 </ul>
             </div>
             
@@ -125,34 +166,34 @@
         <div class="tour">
             <div class="owl-carousel">
                 <div class="banner">
-                    <img src="https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Tour image">
+                    <img src="https://images.unsplash.com/photo-1519338381761-c7523edc1f46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=977&q=80" alt="Tour image">
                 </div>
         
                 <div class="banner">
-                    <img src="https://images.unsplash.com/photo-1547150492-da7ff1742941?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Tour image">
+                    <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Tour image">
                 </div>
         
                 <div class="banner">
-                    <img src="https://images.unsplash.com/photo-1598405189334-d56f20a107de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Tour image">
+                    <img src="https://images.unsplash.com/photo-1452784444945-3f422708fe5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="Tour image">
                 </div>
             </div>
             <div class="tour-info">
                 <div class="tour-title">
                     <div class="tour-title-1">
-                        <h2>Hà Nội - Trung Quốc 5 ngày 4 đêm</h2>
+                        <h2>Hà Nội - Mũi Né - Sài Gòn 4 ngày 3 đêm</h2>
                         <p><b>Thông tin tour:</b></p>
                         <ul>
-                            <li>Mã tour: 15102</li>
-                            <li>Thời gian: 5 ngày 4 đêm</li>
-                            <li>Khởi hành: 10/7 – 30/7/2022</li>
-                            <li>Vận chuyển: Xe du lịch, Máy bay</li>
+                            <li>Mã tour: 15811</li>
+                            <li>Thời gian: 4 ngày 3 đêm</li>
+                            <li>Khởi hành: 30/5 – 3/6/2022</li>
+                            <li>Vận chuyển: Xe du lịch</li>
                             <li>Xuất phát từ: Hà Nội</li>
                         </ul>
                     </div>
                     <div class="tour-title-2">
                         <div class="tour-fr-price">
                             <div class="tour-price">
-                                <h2>Giá từ 14,490,000đ</h2>
+                                <h2>Giá từ 6,990,000đ</h2>
                             </div>
                             <div class="more-info">
                                 <button class="learn-more-1">
@@ -177,70 +218,68 @@
                         <h2>Lịch trình:</h2>
                     </div>
                     <div class="tour-content-text">
-                        <h3>NGÀY 1: HÀ NỘI - TRƯƠNG GIA GIỚI</h3>
+                        <h3>NGÀY 1: HÀ NỘI - SÀI GÒN - MŨI NÉ</h3>
                         <ul>
-                            <li>14h45: Xe và hướng dẫn viên đón Quý khách tại điểm hẹn và đưa Quý khách ra sân bay Quốc tế Nội Bài, đáp chuyến bay VJ7866 (17h45 – 21h30) đi Trương Gia Giới.</li>
-                            <li>21h30: Đến Trương Gia Giới, xe đón Quý khách đưa về khách sạn nhận phòng, nghỉ ngơi.
-                                Do đến Trương Gia Giới muộn nên không kịp ăn tại nhà hàng. Quý khách vui lòng tự túc chuẩn bị đồ ăn tối sẵn từ nhà.</li>
+                            <li>Sáng: 04h00: Xe và HDV Du Lịch Việt đón quý khách tại Cổng Công Viên Thống Nhất – Đường Trần Nhân Tông – Q.Hai Bà Trưng – Tp. Hà Nội khởi hành đi Sân bay Nội Bài làm thủ tục đáp chuyến bay VJ127 lúc 07h00 đi Hồ Chí Minh. Đến sân bay Tân Sơn Nhất, xe và HDV đón đoàn khởi hành đi Phan Thiết. 
+                                11h30: Qúy khách ăn trưa tại nhà hàng, sau đó tiếp tục hành trình đi Mũi Né – Phan Thiết.</li>
+                            <li>Chiều: Về tới khách sạn, quý khách nhận phòng nghỉ ngơi, tự do tắm biển. (nhận phòng từ sau 14h00)</li>
+                            <li>Tối: Đoàn tự do dùng bữa tối tại nhà hàng. Quý khách tự do dạo biển Mũi Né về đêm. Nghỉ đêm tại khách sạn.</li>
                         </ul>
-                        <h3>NGÀY 2: TRƯƠNG GIA GIỚI - PHƯỢNG HOÀNG CỔ TRẤN</h3>
+                        <h3>NGÀY 2: KHÁM PHÁ MŨI NÉ - BÀU TRẮNG</h3>
                         <ul>
-                            <li>Sáng: Sau bữa sáng, đoàn trải nghiệm “tuyến cáp treo dài nhất tại một ngọn núi cao nhất trên thế giới với 98 cabin, dài 7400 mét, cao 1.279 mét tham quan Thiên Môn Sơn.  Từ cáp treo Quý khách có thể ngắm toàn cảnh thị trấn và cảnh rừng núi nguy nga tráng lệ. Nơi đây cũng là nơi nhiều lần biểu diễn máy bay xuyên động Thiên Môn và đua nhảy dù quốc tế.
+                            <li>Sáng: 06h30: Ăn sáng tại nhà hàng khách sạn. Sau ăn sáng, xe đón đoàn tham quan chụp ảnh:
                                 <ul>
-                                    <li>Khi lên tới đỉnh của Thiên Môn Sơn, Quý khách sẽ đi theo con đường bao quanh những đỉnh núi, xuyên từ đỉnh núi này sang đỉnh núi khác. Một bên là núi, một bên là mây, thỉnh thoảng có thêm những lá bùa may mắn màu đỏ rực rỡ sẽ khiến Quý khách cảm thấy lạc như lạc vào chốn bồng lai tiên cảnh, như đang đi trên 9 tầng mây của thiên đường.</li>
-                                    <li>Tham quan Sạn Đạo Kính, đi bộ trên con đường bằng kính trên vách núi đá để thử lòng can đảm của mình.</li>
-                                    <li>Quý khách đi qua hệ thống thang cuốn đồ sộ trong lòng núi để đến Cổng Trời - nơi giao thoa giữa trời và đất.</li>
-                                    <li>Sau đó, đoàn đi ô tô xuống núi, trải nghiệm cảm giác mạnh trên cung đường 99 khúc cua ngoạn mục nhất thế giới.</li>
+                                    <li>Làng chài Mũi Né: khám phá cuộc sống của người dân xứ biển Mũi Né - Phan Thiết, làng chài vào buối sáng như một chợ trên biển, tàu bè tấp nập, người dân mua bán.</li>
+                                    <li>Bàu Trắng - quý khách tham quan chinh phục đồi cát trắng - một trong đồi cát trắng nhất và đẹp nhất Việt Nam…chụp ảnh, trượt cát, hoặc lái xe mô tô chinh phục đồi cát (chi phí tự túc).</li>
                                 </ul>
                             </li>
-                            <li>Sau bữa trưa, đoàn lên xe khởi hành đi Phượng Hoàng Cổ Trấn.</li>
-                            <li>Sau bữa tối đoàn tự do khám phá cảnh sắc của Phượng Hoàng Cổ Trấn về đêm.</li>
-                            <li>Nghỉ đêm tại Phượng Hoàng Cổ Trấn</li>
-                        </ul>
-                        <h3>NGÀY 3: THAM QUAN PHƯỢNG HOÀNG CỔ TRẤN</h3>
-                        <ul>
-                            <li>Sáng: Quý khách ăn sáng tại khách sạn, sau đó, Quý khách:
+                            <li>Trưa: 11h00: Đoàn về lại thành phố ăn cơm trưa tại nhà hàng.</li>
+                            <li>Chiều: 14h30:  Xe và HDV đưa đoàn đi tham quan:
                                 <ul>
-                                    <li>ham quan Phượng Hoàng Cổ Trấn, với lầu Miêu Miêu, Bắc Môn cổ thành,  Lầu Phong Thúy Hồng Kiều, Viện bảo tàng Cổ Thành…(tham quan bên ngoài). Chụp hình tại Cung Vạn Thọ, Tháp Vạn Danh. Có rất nhiều cây cầu bằng gỗ, bằng đá nối hai bờ sông Đà Giang, đặc biệt là cầu Hồng Kiều duyên dáng với kiến trúc độc đáo theo phong cách rất “Phượng Hoàng”. Đứng từ bên đây cầu nhìn sang phía bên kia cầu, bạn sẽ thấy thấp thoáng Phượng Hoàng cổ trấn trải dài với những ngõ sâu hun hút, những ngôi nhà rêu phong với mái ngói cổ âm dương dày đặc, màu xám như đá tai mèo. Những tượng phù điêu trên đầu mái cong vút một cách đầy kiêu hãnh.</li>
+                                    <li>Tháp chàm Poshanu - đây là một nhóm di tích còn sót lại của Vương quốc Chăm Pa xưa.</li>
+                                    <li>Lâu Đài Rượu Vang Sealink, khám phá vẻ đẹp của lối kiến trúc lâu đài châu Âu thời Trung Cổ, thưởng thức những dòng rượu vang nức tiếng đã làm say đắm những người mê rượu vang  trên khắp thế giới.</li>
+                                </ul>
+                                16h30: Đoàn về khách sạn, Quý khách tự do nghỉ ngơi, tắm biển.
+                            </li>
+                            <li>Tối: 18h00: Qúy khách ăn tối tại nhà hàng với các món ăn miền biển hấp dẫn. Sau bữa tối, Quý khách tự do khám phá ẩm thực Mũi Né,  tự do đi dạo và khám phá xứ biển về đêm.</li>
+                            <li></li>
+                        </ul>
+                        <h3>NGÀY 3: MŨI NÉ - CITY TOUR SÀI GÒN</h3>
+                        <ul>
+                            <li>Sáng: Quý khách dậy sớm ngắm bình minh, sau đó ăn sáng tại khách sạn
+                                <ul>
+                                    <li>08h00: Qúy khách làm thủ tục trả phòng khách sạn, lên xe khởi hành về Hồ Chí Minh.</li>
+                                    <li>Trưa: Qúy khách ăn trưa tại nhà hàng trên cao tốc Long Thành – Dầu Giây. Tiếp tục hành trình khởi hành đi Tp. Hồ Chí Minh</li>
                                 </ul>
                             </li>
-                            <li>Ăn trưa tại nhà hàng.</li>
-                            <li>Chiều: Tự do thăm quan và khám phá Phượng Hoàng Cổ Trấn với các món ăn địa phương, tự do chụp hình hoặc ngồi uống cà phê, nghe những bản nhạc trữ tình, ngắm cảnh thị trấn cổ dọc sông Đà Giang và cảm nhận cuộc sống yên bình nơi đây, bạn sẽ cảm giác như quên hết mệt mỏi và bỏ lại sau lưng những lo toan vất vả của cuộc sống. Bạn cũng có thể tự túc thưởng ngoạn trên một chiếc thuyền nhỏ để thả lừng lờ trôi dọc theo sông, ngắm nhìn cuộc sống của người dân hai bên bờ, chui qua những cây cầu sẽ thấy rất thú vị. 
-                                Quý khách dùng bữa tối tại nhà hàng. Nghỉ đêm tại khách sạn ở Phượng Hoàng.</li>
-                        </ul>
-                        <h3>NGÀY 4: VŨ LĂNG NGUYÊN</h3>
-                        <ul>
-                            <li>Sau bữa sáng quý khách lên xe về Trương Gia Giới tham quan:
+                            <li>Chiều: Quý khách đi tham quan thành phố với:
                                 <ul>
-                                    <li>Phù Dung Trấn – một thị trấn cổ của người Thổ Gia đã có hơn 2000 năm lịch sử, được mệnh danh là thị trấn treo trên thác nước. Đến thị trấn Phù Dung, dạo bước trên đường phố trải đá xanh sẽ khiến ta lạc trong cảnh đẹp mơ màng, cảm nhận những nét độc đáo của thị trấn này. Những đường phố, nếp nhà sàn, tường khắc hoa khi ẩn khi hiện dưới ánh chiều tà. Tại đây, du khách được tận mắt chứng kiến nền văn vật cấp quốc gia, khám phá được nền văn hóa dân tộc đặc sắc của người Thổ Gia, có cơ hội thưởng thức điệu múa cổ xưa Mao-cu-sư tái hiện đời sống sinh hoạt hàng ngày như săn bắt, cày cấy, sinh hoạt… của tổ tiên người Thổ Gia.</li>
+                                    <li>Dinh Độc Lập - Quý khách sẽ có dịp xem nội các chính quyền Sài Gòn cũ sống và làm việc như thế nào, Tận mắt thấy chiếc xe tăng húc đổ cánh cổng dinh độc lập trong giờ phút lịch sử.</li>
+                                    <li>Nhà thờ Đức Bà - Ngôi giáo đường tráng lệ và cổ kính này không chỉ là một công trình tôn giáo mà còn là một kiến trúc mang nhiều giá trị văn hóa, lịch sử.</li>
+                                    <li>Bưu điện Thành Phố. Đây là công trình kiến trúc mang phong cách châu Âu kết hợp với nét trang trí châu Á.</li>
+                                    <li>Tham quan Bến Nhà Rồng – nơi Bác Hồ ra đi tìm đường Cứu nước , tìm hiểu những lịch sử ký ức gắn với cuộc đời Người.</li>
                                 </ul>
                             </li>
-                            <li>Đoàn ăn trưa tại nhà hàng. Sau bữa trưa đoàn lên xe tiếp tục khởi hành về Trương Gia Giới</li>
-                            <li>Tham quan nhà kỹ thuật 5D, xem phim ‘Ký ức đại Tương Tây‘. Xong quý khách có thể tự phí đi thăm Cầu kính Thiên Vân Độ - Cầu kính dài nhất thế giới.</li>
-                            <li>Đoàn thăm quan và mua sắm tại cửa hàng trà và nhà thuốc.</li>
-                            <li>Sau bữa tối Qúy khách tự phí xem chương trình biểu diễn đặc sắc "Rạng Rỡ Tương Tây" hoặc ‚"Trương Gia Giới Thiên Cổ Tình" (chi phí tự túc)</li>
-                            <li>Quý khách nghỉ đêm tại Vũ Lăng Nguyên.</li>
+                            <li>Tối: Quý khách ăn tối tại nhà hàng. Sau đó về khách sạn nhận phòng nghỉ ngơi. Tối quý khách tự do dạo chơi, khám phá Sài Gòn về đêm. Nghỉ đêm tại khách sạn.</li>
                         </ul>
-                        <h3>NGÀY 5: VŨ LĂNG NGUYÊN</h3>
+                        <h3>NGÀY 4: SÀI GÒN - HÀ NỘI</h3>
                         <ul>
-                            <li>Sáng: Sau bữa sáng tại khách sạn, quý khách sẽ tham quan cửa hàng ngọc đá quý, cửa hàng tơ lụa để tìm hiểu về văn hóa Ngọc và văn hóa tơ lụa của Trung Quốc.
+                            <li>Sáng: Qúy khách ăn sáng tại khách sạn, Quý khách tự do đi mua sắm tại chợ Bến Thành, mua đặc sản, quà lưu niệm cho người thân và gia đình.
                                 <ul>
-                                    <li>Sau đó đi thăm "Thế giới băng tuyết mộng mơ", quý khách tha hồ trải nghiệm trượt tuyết.</li>
-                                    <li>Đoàn tham quan Bách Trạng Hiệp - Chiến trường cổ xưa.</li>
-                                    <li>Ghé tham quan “Họa viện Quân Thanh” – là nơi trưng bày  tranh nghệ thuật Hồ Nam, đến đây Quý khách được chiêm ngưỡng những tác phẩm nghệ thuật đặc sắc được chế tác từ vật liệu tự nhiên như cát, mảnh đá, cây cỏ thiên nhiên… tạo nên các bức tranh tuyệt đẹp với các cảnh quan thu nhỏ của đất nước Trung Hoa.</li>
+                                    <li>10h30: Qúy khách làm thủ tục trả phòng khách sạn</li>
+                                    <li>11h30: Qúy khách ăn trưa tại nhà hàng.</li>
+                                    <li>13h00: Xe đưa quý khách ra Sân bay Tân Sơn Nhất, làm thủ tục đáp chuyến bay VJ196 lúc 16h05 về sân bay Nội Bài.</li>
+                                    <li>18h30: Về đến Nội Bài, xe và HDV đón đoàn về điểm đón ban đầu chia tay quý khách. Kết thúc chương trình tham quan. Hẹn gặp lại Quý khách.</li>
+                                    <li>Ghi chú: Lịch trình tham quan có thể thay đổi linh hoạt tùy thuộc vào tình hình thực tế nhưng vẫn đảm bảo đầy đủ các điểm tham quan có trong chương trình!</li>
                                 </ul>
                             </li>
-                            <li>Đoàn ăn tối tại nhà hàng. Sau đó ra sân bay đón chuyến bay VJ7867(22:15 – 00:15) về Hà Nội.</li>
-                            <li>Về đến Nội Bài, xe đón đoàn đưa về điểm hẹn tại Hà Nội. Kết thúc chương trình!</li>
-                            <li>Hẹn gặp lại Quý khách trong các chương trình du lịch tiếp theo.</li>
-                            <li>Lưu ý: Thứ tự tham quan có thể thay đổi tùy tình hình thực tế mà không làm thay đổi lịch trình và chất lượng dịch vụ.</li>
                         </ul>
+                        <p></p>
+                        <p></p>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </div>
 
     <div class="email-promo">
@@ -256,11 +295,11 @@
         <div class="footer-frame">
 
             <div class="fcontent">
-                <h4 class="title-1">shiba tourist</h4>
+                <h4 class="title-1">vietnam tourist</h4>
                 <div class="content-footer">
                     <ul>
-                        <li><p><b>Công ty TNHH Du lịch Shiba</b></p></li>
-                        <li><p>Website: shibatourist.com.vn</p></li>
+                        <li><p><b>Công ty TNHH Du lịch Việt</b></p></li>
+                        <li><p>Website: vntourist.com.vn</p></li>
                         <li><p>GIẤY PHÉP KINH DOANH</p></li>
                         <li><p>Số GP/ No: 79-042/ 2022/ TCDL – GPLHQT</p></li>
                         <li><p>Do Tổng Cục Du Lịch cấp ngày 29/5/2022</p></li>

@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Link CSS tự viết -->
-    <link rel="stylesheet" href="/qp133.github.io/Web/day_08_finalTest/Tours/TourTrongNuoc/style.css">
+    <link rel="stylesheet" href="./style.css">
 
     <style>
         .container {
@@ -95,21 +95,62 @@
         .tour-content-text ul li {
             margin: 5px 0;
         }
+        .more-info {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .learn-more-1 {
+            margin-top: 10px;
+            width: 200px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 1s;
+
+            background-color: #005baa;
+        }
+
+        .learn-more-1 a {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #fff;
+            font-weight: bold;
+
+            transition: all 1s;
+        }
+        .learn-more-1:hover{
+            background-color: #fff;
+            color: #005baa;
+            opacity: 1;
+        }
+        .learn-more-1:hover a{
+            color: #005baa;
+        }
+        .button-text {
+            padding-left: 10px;
+        }
+
     </style>
 </head>
 <body>
     <div class="header">
         <div class="logo">
-            <p><a href="/qp133.github.io/Web/day_08_finalTest/index.html">SHIBA TOURISTS</a></p>
+            <p><a href="./index.html">VIETNAM TOURISTS</a></p>
         </div>
 
         <div class="sidebar">
             <div class="header-menu">
                 <ul>
-                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/index.html">TRANG CHỦ</a></li>
-                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/duLichTrongNuoc.html">DU LỊCH TRONG NƯỚC</a></li>
-                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/duLichNuocNgoai.html">DU LỊCH NƯỚC NGOÀI</a></li>
-                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/blog.html">BLOG</a></li>
+                    <li class="header-menu-item"><a href="./index.html">TRANG CHỦ</a></li>
+                    <li class="header-menu-item"><a href="./duLichTrongNuoc.html">DU LỊCH TRONG NƯỚC</a></li>
+                    <li class="header-menu-item"><a href="./duLichNuocNgoai.html">DU LỊCH NƯỚC NGOÀI</a></li>
+                    <li class="header-menu-item"><a href="./blog.html">BLOG</a></li>
                 </ul>
             </div>
             
@@ -125,34 +166,30 @@
         <div class="tour">
             <div class="owl-carousel">
                 <div class="banner">
-                    <img src="https://images.unsplash.com/photo-1597552661064-af143a5f3bee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Tour image">
+                    <img src="https://wecheckin.vn/wp-content/uploads/2019/10/Mo%CC%82c-chau.png" alt="Tour image">
                 </div>
         
                 <div class="banner">
-                    <img src="https://images.unsplash.com/photo-1540998145333-e2eef1a9822d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1383&q=80" alt="Tour image">
-                </div>
-        
-                <div class="banner">
-                    <img src="https://images.unsplash.com/photo-1617541086271-4d43983704bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="Tour image">
+                    <img src="https://images.unsplash.com/photo-1559892723-1ace6adecbc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=863&q=80" alt="Tour image">
                 </div>
             </div>
             <div class="tour-info">
                 <div class="tour-title">
                     <div class="tour-title-1">
-                        <h2>Hà Nội - Hàn Quốc 5 ngày 4 đêm</h2>
+                        <h2>Hà Nội - Mộc Châu 2 ngày 1 đêm</h2>
                         <p><b>Thông tin tour:</b></p>
                         <ul>
-                            <li>Mã tour: 15018</li>
+                            <li>Mã tour: 15648</li>
                             <li>Thời gian: 4 ngày 3 đêm</li>
-                            <li>Khởi hành: 15/6 – 30/6/2022</li>
-                            <li>Vận chuyển: Xe du lịch, Máy bay</li>
+                            <li>Khởi hành: Thứ 7 hàng tuần</li>
+                            <li>Vận chuyển: Xe du lịch</li>
                             <li>Xuất phát từ: Hà Nội</li>
                         </ul>
                     </div>
                     <div class="tour-title-2">
                         <div class="tour-fr-price">
                             <div class="tour-price">
-                                <h2>Giá từ 15,990,000đ</h2>
+                                <h2>Giá từ 1,590,000đ</h2>
                             </div>
                             <div class="more-info">
                                 <button class="learn-more-1">
@@ -177,47 +214,36 @@
                         <h2>Lịch trình:</h2>
                     </div>
                     <div class="tour-content-text">
-                        <h3>NGÀY 1: HÀ NỘI - INCHEON - SEOUL</h3>
-                        <p>20h00: Quý khách tập trung tại điểm hẹn, xe đưa ra sân bay Nội Bài làm thủ tục đáp chuyến bay VJ 960 HAN-ICN (01:40 – 07:55) khởi hành đi Seoul – thủ đô Hàn Quốc. Quý khách nghỉ đêm trên máy bay.</p>
-                        <h3>NGÀY 2: SEOUL - CITY TOUR</h3>
-                        <p>Đoàn làm thủ tục nhập cảnh. Xe và HDV đón đoàn đi ăn sáng với món Canh sườn bò và trả nghiệm tắm sauna. Sau đó đoàn thăm quan:</p>
+                        <h3>NGÀY 1: HÀ NỘI - MỘC CHÂU</h3>
                         <ul>
-                            <li>Cung điện Hoàng Gia Kyeong-bok</li>
-                            <li>Bảo tang dân gian quốc gia “ Nation Folk Museum”</li>
-                            <li>Nhà xanh-Phủ Tổng thống “The Blue House”</li>
+                            <li>Sáng: 06h30: Xe và hướng dẫn viên đón Quý khách tại điểm hẹn. Xe dừng chân trên đường tại khu vực Xuân Mai để Quý khách tự do ăn sáng.
+                                <ul>
+                                    <li>10h30: Dừng chân trên đèo Thung Khe để chụp ảnh và ngắm cảnh rừng núi hùng vỹ của Hòa Bình.</li>
+                                </ul>
+                            </li>
+                            <li>Trưa: 12h30: Đến Mộc Châu, Quý khách ăn trưa tại nhà hàng, nghỉ ngơi.</li>
+                            <li>Chiều: 13h30: Hướng dẫn viên đưa Quý khách đi thăm quan các điểm sau:
+                                <ul>
+                                    <li>Thác Dải Yếm - Một thác nước tuy nhỏ nhưng mang một vẻ đẹp quyến rũ. Tương truyền, dòng thác này là dải yếm của người con gái cứu chàng trai thoát khỏi dòng nước lũ. Trường hợp vào mùa khô, thác ít nước chúng tôi sẽ thay thế điểm thăm quan Thác Dải Yếm bằng thăm khu Tượng đài Tây tiến để thăm, nghe và tìm hiểu về Con đường Tây tiến năm xưa và tình hữu nghị Việt - Lào trong những năm kháng chiến.</li>
+                                    <li>Vườn hoa Happy land - Happy land có diện tích gần 5ha, nằm giữa một thung lũng rộng lớn ở bản Lùn, xã Mường Sang. Đến đây, du khách sẽ được đón chào bởi những thảm hoa được trồng từ nhiều loại hoa khác nhau, trong đó có những loài hoa đặc trưng của vùng Tây Bắc).</li>
+                                    <li>Rừng thông Bản Áng giống như một Đà Lạt thu nhỏ trên đất cao nguyên Mộc Châu. Tại đây Quý khách có thể thuê xe đạp hoặc ngồi xe ngựa kéo để dạo vòng vòng ngắm cảnh thư giãn xung quanh Hồ Bản Áng. Hoặc đơn giản là leo lên những đồi thông, ngồi nghỉ ngơi và lấy lại cân bằng sau những bộn bề cuộc sống nơi thành thị ồn ào.</li>
+                                </ul>
+                            </li>
+                            <li>Tối: 18h00: Quý khách ăn tối tại nhà hàng sau đó về khách sạn nhận phòng nghỉ ngơi. Buổi tối Quý khách tự do khám phá cao nguyên Mộc Châu. Nghỉ đêm Mộc Châu.</li>
                         </ul>
-                        <p>Đoàn ăn trưa với món gà tần sâm.</p>
-                        <p>Sau bữa trưa đoàn ngắm dòng suối Cheonggyecheon</p>
+                        <h3>NGÀY 2: MỘC CHÂU - MAI CHÂU - HÀ NỘI</h3>
                         <ul>
-                            <li>Tham gia khóa học làm Kim Chi, mặc quần áo Hanbok</li>
-                            <li>Đoàn tới tham quan tháp truyền hình Namsan (Không báo gồm phí lên đỉnh tháp). Đứng ở chân tháp,quý khách ngắm được toàn cảnh Seoul rộng lớn và đặc biệt trên đỉnh núi có một nơi giữ những ổ khóa ,chìa khóa xinh xắn ghi các thông điệp tình yêu của các đôi trai gái. Đặc biệt mùa xuân đên nơi đây cũng là nơi lý tưởng để ngắm hoa anh đào lãng mạn.</li>
+                            <li>Sáng: 06h30: Sau bữa sáng tại nhà hàng hoặc khách sạn, Quý khách cùng hướng dẫn viên tiếp tục thăm quan Đồi chè Mộc Sương và chụp hình cùng với đồi chè Trái tim.
+                                <ul>
+                                    <li>Đồi chè Mộc Sương không chỉ là đồi chè đẹp nhất của Cao nguyên Mộc Châu mà còn là đồi chè đẹp nhất của Việt Nam bởi những luống chè xanh mởn tròn trịa và uốn lượn xa ngút tầm mắt đưa đến một cảm giác lãng mạn và bình yên.</li>
+                                    <li>Đây cúng chính là vùng nguyên liệu để sản xuất ra những loại chè ngon và nổi tiếng mà một trong những thương hiệu nổi tiếng chính là Ô Long trà.</li>
+                                    <li>09h30: Quý khách lên xe về Hà Nội. Trên đường tiếp tục dừng chụp hình tại những điểm đẹp mà đoàn chưa kịp chụp hình ngày hôm trước.</li>
+                                </ul>
+                            </li>
+                            <li>Trưa: 11h30: Ăn trưa tại Mai Châu. Sau bữa trưa, Quý khách có thể khám phá thung lũng Mai Châu bằng xe đạp (hoặc xe điện, chi phí thuê xe đạp hoặc xe điện tự túc). Quý khách thăm những ngôi nhà sàn nhỏ xinh của người Thái để tìm hiểu những nét văn hóa độc đáo của họ, thăm những gian hàng thổ cẩm, cùng học cách dệt thổ cẩm của người Thái và mua những món quà lưu niệm nơi đây. Sau đó Quý khách tự do đạp xe hoặc dạo bộ và mua sắm đồ, chụp hình.</li>
+                            <li>Chiều: 15h00: Quý khách lên xe về Hà Nội. Trên đường về ghé dừng nghỉ ngơi tại đặc sản sữa Ba Vì mua đồ về làm quà cho bạn bè và người.</li>
+                            <li>Tối: 19h00: Xe đưa quý khách tới Hà Nội. Kết thúc chương trình. Hẹn gặp lại Quý khách!</li>
                         </ul>
-                        <p>Đoàn ăn tối với món Cơm truyền thống Hàn Quốc</p>
-                        <p>Đoàn về khách sạn hoặc tự do khám phá Seoul về đêm. Nghỉ đêm tại khách sạn 3* hoặc khách sạn tương đương.</p>
-                        <h3>NGÀY 3: SEOUL - LOTTE WORLD</h3>
-                        <p>Đoàn ăn sáng tại khách sạn. Sau đó khởi hành đi tham quan công viên chủ đề Lotte World lớn nhất tại thủ đô Seoul, Hàn Quốc. Đến đây quý khách như lạc bước vào một thiên đường cổ tích giữa chốn phồn hoa với những ánh đèn lung linh,những nhân vật thần tiên,những thiết kế mang đậm nét Trung cổ.</p>
-                        <p>Đoàn ăn trưa với món Cá nướng hoặc thịt nướng</p>
-                        <p>Trở về Seoul,đoàn vào thăm quan mua sắm:</p>
-                        <ul>
-                            <li>Cửa hàng mỹ phẩm</li>
-                            <li>Cửa hàng nhân sâm,và cửa hàng Tinh dầu thông đỏ</li>
-                        </ul>
-                        <p>Đoàn ăn tối tại Nhà hàng.Nghỉ đêm tại khách sạn 3* hoặc tương đương.</p>
-                        <h3>NGÀY 4: SEOUL - TRẢI NGHIỆM TRƯỢT TUYẾT - BẢO TÀNG 4D</h3>
-                        <p>Quý khách dùng bữa sáng tại khách sạn, sau đó xe công ty sẽ đưa quý khách tới khu trượt tuyết Yangjipine – Tới nơi đây chắc hẳn mọi du khách đều cảm thấy hứng thú muốn thử ngay lần nhìn đầu tiên, những đường đi uốn lượn mềm mại đến không ngờ ( tự túc chi phí thuê dụng cụ trượt tuyết)</p>
-                        <ul>
-                            <li>Đoàn tiếp tục trải nghiệm hái dâu tây, di chuyển tới bảo tàng 4D</li>
-                        </ul>
-                        <p>Ăn trưa tại nhà hàng.</p>
-                        <p>Buổi chiều Quý khách tham quan:</p>
-                        <ul>
-                            <li>Cửa hàng nông sản sâm tươi và nấm linh chi</li>
-                            <li>Thỏa sức mua sắm ở cửa hàng miễn thuế.</li>
-                        </ul>
-                        <p>Ăn tối với món lẩu Shabushabu.</p>
-                        <p>Nghỉ đêm tại khách sạn 3* hoặc tương đương.</p>
-                        <h3>NGÀY 5: SEOUL - INCHEON - HANOI</h3>
-                        <p>Đoàn khởi hành ra sân bay Incheon đáp chuyến bay VJ 962 ICN – HAN (11:05 -13:35). Đến sân bay Nội Bài,xe đón trở về trung tâm thành phố.Chia tay và hẹn gặp lại Quý khách!</p>
                     </div>
                 </div>
             </div>
@@ -239,11 +265,11 @@
         <div class="footer-frame">
 
             <div class="fcontent">
-                <h4 class="title-1">shiba tourist</h4>
+                <h4 class="title-1">vietnam tourist</h4>
                 <div class="content-footer">
                     <ul>
-                        <li><p><b>Công ty TNHH Du lịch Shiba</b></p></li>
-                        <li><p>Website: shibatourist.com.vn</p></li>
+                        <li><p><b>Công ty TNHH Du lịch Việt</b></p></li>
+                        <li><p>Website: vntourist.com.vn</p></li>
                         <li><p>GIẤY PHÉP KINH DOANH</p></li>
                         <li><p>Số GP/ No: 79-042/ 2022/ TCDL – GPLHQT</p></li>
                         <li><p>Do Tổng Cục Du Lịch cấp ngày 29/5/2022</p></li>

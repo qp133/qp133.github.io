@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Link CSS tự viết -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/qp133.github.io/Web/day_08_finalTest/Tours/TourTrongNuoc/style.css">
 
     <style>
         .container {
@@ -95,21 +95,62 @@
         .tour-content-text ul li {
             margin: 5px 0;
         }
+        .more-info {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .learn-more-1 {
+            margin-top: 10px;
+            width: 200px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 1s;
+
+            background-color: #005baa;
+        }
+
+        .learn-more-1 a {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #fff;
+            font-weight: bold;
+
+            transition: all 1s;
+        }
+        .learn-more-1:hover{
+            background-color: #fff;
+            color: #005baa;
+            opacity: 1;
+        }
+        .learn-more-1:hover a{
+            color: #005baa;
+        }
+        .button-text {
+            padding-left: 10px;
+        }
+
     </style>
 </head>
 <body>
     <div class="header">
         <div class="logo">
-            <p><a href="/qp133.github.io/Web/day_08_finalTest/index.html">SHIBA TOURISTS</a></p>
+            <p><a href="./index.html">VIETNAM TOURISTS</a></p>
         </div>
 
         <div class="sidebar">
             <div class="header-menu">
                 <ul>
-                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/index.html">TRANG CHỦ</a></li>
-                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/duLichTrongNuoc.html">DU LỊCH TRONG NƯỚC</a></li>
-                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/duLichNuocNgoai.html">DU LỊCH NƯỚC NGOÀI</a></li>
-                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/blog.html">BLOG</a></li>
+                    <li class="header-menu-item"><a href="./index.html">TRANG CHỦ</a></li>
+                    <li class="header-menu-item"><a href="./duLichTrongNuoc.html">DU LỊCH TRONG NƯỚC</a></li>
+                    <li class="header-menu-item"><a href="./duLichNuocNgoai.html">DU LỊCH NƯỚC NGOÀI</a></li>
+                    <li class="header-menu-item"><a href="./blog.html">BLOG</a></li>
                 </ul>
             </div>
             
@@ -125,34 +166,34 @@
         <div class="tour">
             <div class="owl-carousel">
                 <div class="banner">
-                    <img src="https://images.unsplash.com/photo-1597811209390-e674b6a68775?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=877&q=80" alt="Tour image">
+                    <img src="https://images.unsplash.com/photo-1597552661064-af143a5f3bee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Tour image">
                 </div>
         
                 <div class="banner">
-                    <img src="https://images.unsplash.com/photo-1583333803672-0403650c86b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="Tour image">
+                    <img src="https://images.unsplash.com/photo-1540998145333-e2eef1a9822d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1383&q=80" alt="Tour image">
                 </div>
         
                 <div class="banner">
-                    <img src="https://images.unsplash.com/photo-1649035075923-9301d4e01044?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="Tour image">
+                    <img src="https://images.unsplash.com/photo-1617541086271-4d43983704bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="Tour image">
                 </div>
             </div>
             <div class="tour-info">
                 <div class="tour-title">
                     <div class="tour-title-1">
-                        <h2>Hà Nội - Nha Trang 3 ngày 2 đêm</h2>
+                        <h2>Hà Nội - Hàn Quốc 5 ngày 4 đêm</h2>
                         <p><b>Thông tin tour:</b></p>
                         <ul>
-                            <li>Mã tour: 15812</li>
-                            <li>Thời gian: 3 ngày 2 đêm</li>
-                            <li>Khởi hành: 7/6 – 15/6/2022</li>
-                            <li>Vận chuyển: Xe du lịch</li>
+                            <li>Mã tour: 15018</li>
+                            <li>Thời gian: 4 ngày 3 đêm</li>
+                            <li>Khởi hành: 15/6 – 30/6/2022</li>
+                            <li>Vận chuyển: Xe du lịch, Máy bay</li>
                             <li>Xuất phát từ: Hà Nội</li>
                         </ul>
                     </div>
                     <div class="tour-title-2">
                         <div class="tour-fr-price">
                             <div class="tour-price">
-                                <h2>Giá từ 2,390,000đ</h2>
+                                <h2>Giá từ 15,990,000đ</h2>
                             </div>
                             <div class="more-info">
                                 <button class="learn-more-1">
@@ -177,12 +218,47 @@
                         <h2>Lịch trình:</h2>
                     </div>
                     <div class="tour-content-text">
+                        <h3>NGÀY 1: HÀ NỘI - INCHEON - SEOUL</h3>
+                        <p>20h00: Quý khách tập trung tại điểm hẹn, xe đưa ra sân bay Nội Bài làm thủ tục đáp chuyến bay VJ 960 HAN-ICN (01:40 – 07:55) khởi hành đi Seoul – thủ đô Hàn Quốc. Quý khách nghỉ đêm trên máy bay.</p>
+                        <h3>NGÀY 2: SEOUL - CITY TOUR</h3>
+                        <p>Đoàn làm thủ tục nhập cảnh. Xe và HDV đón đoàn đi ăn sáng với món Canh sườn bò và trả nghiệm tắm sauna. Sau đó đoàn thăm quan:</p>
                         <ul>
-                            <li>Combo du lịch Nha Trang  3 ngày 2 đêm ở khách sạn gần trung tâm mang đến mức giá bất ngờ bạn và gia đình sẽ được tận hưởng kỳ nghỉ sang chảnh chuẩn 3 Sao.</li>
-                            <li>Bao gồm 1 vé máy bay khứ hồi từ Hà Nội - Nha Trang của hãng hàng không Bamboo Airways. Vé đã gồm 7kg hành lý xách tay và 20kg hành lý.</li>
-                            <li>02 đêm/ 3 đêm nghỉ tại khách sạn  (Miễn phí bữa sáng).</li>
-                            <li>Combo Nha Trang là một hình thức mang đến cảm giác cho bạn và quý khách không bị gò bó trong những lịch trình tour có sẵn. Du khách thỏa sức lên kế hoạch cho chuyến đi của mình: Ở đâu, ăn gì, chơi như thế nào… lựa chọn đặt combo du lịch Nha Trang chính là phương án tốt nhất để tiết kiệm thời gian, công sức cho khách du lịch mà vẫn không làm chuyến khám phá của quý khách kém đi phần thú vị.</li>
+                            <li>Cung điện Hoàng Gia Kyeong-bok</li>
+                            <li>Bảo tang dân gian quốc gia “ Nation Folk Museum”</li>
+                            <li>Nhà xanh-Phủ Tổng thống “The Blue House”</li>
                         </ul>
+                        <p>Đoàn ăn trưa với món gà tần sâm.</p>
+                        <p>Sau bữa trưa đoàn ngắm dòng suối Cheonggyecheon</p>
+                        <ul>
+                            <li>Tham gia khóa học làm Kim Chi, mặc quần áo Hanbok</li>
+                            <li>Đoàn tới tham quan tháp truyền hình Namsan (Không báo gồm phí lên đỉnh tháp). Đứng ở chân tháp,quý khách ngắm được toàn cảnh Seoul rộng lớn và đặc biệt trên đỉnh núi có một nơi giữ những ổ khóa ,chìa khóa xinh xắn ghi các thông điệp tình yêu của các đôi trai gái. Đặc biệt mùa xuân đên nơi đây cũng là nơi lý tưởng để ngắm hoa anh đào lãng mạn.</li>
+                        </ul>
+                        <p>Đoàn ăn tối với món Cơm truyền thống Hàn Quốc</p>
+                        <p>Đoàn về khách sạn hoặc tự do khám phá Seoul về đêm. Nghỉ đêm tại khách sạn 3* hoặc khách sạn tương đương.</p>
+                        <h3>NGÀY 3: SEOUL - LOTTE WORLD</h3>
+                        <p>Đoàn ăn sáng tại khách sạn. Sau đó khởi hành đi tham quan công viên chủ đề Lotte World lớn nhất tại thủ đô Seoul, Hàn Quốc. Đến đây quý khách như lạc bước vào một thiên đường cổ tích giữa chốn phồn hoa với những ánh đèn lung linh,những nhân vật thần tiên,những thiết kế mang đậm nét Trung cổ.</p>
+                        <p>Đoàn ăn trưa với món Cá nướng hoặc thịt nướng</p>
+                        <p>Trở về Seoul,đoàn vào thăm quan mua sắm:</p>
+                        <ul>
+                            <li>Cửa hàng mỹ phẩm</li>
+                            <li>Cửa hàng nhân sâm,và cửa hàng Tinh dầu thông đỏ</li>
+                        </ul>
+                        <p>Đoàn ăn tối tại Nhà hàng.Nghỉ đêm tại khách sạn 3* hoặc tương đương.</p>
+                        <h3>NGÀY 4: SEOUL - TRẢI NGHIỆM TRƯỢT TUYẾT - BẢO TÀNG 4D</h3>
+                        <p>Quý khách dùng bữa sáng tại khách sạn, sau đó xe công ty sẽ đưa quý khách tới khu trượt tuyết Yangjipine – Tới nơi đây chắc hẳn mọi du khách đều cảm thấy hứng thú muốn thử ngay lần nhìn đầu tiên, những đường đi uốn lượn mềm mại đến không ngờ ( tự túc chi phí thuê dụng cụ trượt tuyết)</p>
+                        <ul>
+                            <li>Đoàn tiếp tục trải nghiệm hái dâu tây, di chuyển tới bảo tàng 4D</li>
+                        </ul>
+                        <p>Ăn trưa tại nhà hàng.</p>
+                        <p>Buổi chiều Quý khách tham quan:</p>
+                        <ul>
+                            <li>Cửa hàng nông sản sâm tươi và nấm linh chi</li>
+                            <li>Thỏa sức mua sắm ở cửa hàng miễn thuế.</li>
+                        </ul>
+                        <p>Ăn tối với món lẩu Shabushabu.</p>
+                        <p>Nghỉ đêm tại khách sạn 3* hoặc tương đương.</p>
+                        <h3>NGÀY 5: SEOUL - INCHEON - HANOI</h3>
+                        <p>Đoàn khởi hành ra sân bay Incheon đáp chuyến bay VJ 962 ICN – HAN (11:05 -13:35). Đến sân bay Nội Bài,xe đón trở về trung tâm thành phố.Chia tay và hẹn gặp lại Quý khách!</p>
                     </div>
                 </div>
             </div>
@@ -204,11 +280,11 @@
         <div class="footer-frame">
 
             <div class="fcontent">
-                <h4 class="title-1">shiba tourist</h4>
+                <h4 class="title-1">vietnam tourist</h4>
                 <div class="content-footer">
                     <ul>
-                        <li><p><b>Công ty TNHH Du lịch Shiba</b></p></li>
-                        <li><p>Website: shibatourist.com.vn</p></li>
+                        <li><p><b>Công ty TNHH Du lịch Việt</b></p></li>
+                        <li><p>Website: vntourist.com.vn</p></li>
                         <li><p>GIẤY PHÉP KINH DOANH</p></li>
                         <li><p>Số GP/ No: 79-042/ 2022/ TCDL – GPLHQT</p></li>
                         <li><p>Do Tổng Cục Du Lịch cấp ngày 29/5/2022</p></li>
