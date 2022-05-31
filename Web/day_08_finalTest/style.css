@@ -169,6 +169,7 @@ body {
 .owl-dots, .owl-nav {
     text-align: center;
     -webkit-tap-highlight-color: transparent;
+    margin-top: 10px;
 }
 
 .owl-dots .owl-dot span {
