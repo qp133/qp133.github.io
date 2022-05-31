@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <!-- Link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Link CSS thư viện -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link CSS tự viết -->
+    <link rel="stylesheet" href="/qp133.github.io/Web/day_08_finalTest/Tours/TourTrongNuoc/style.css">
+
+    <style>
+        .container {
+            padding-top: 80px;
+            margin: 0 80px;
+        }
+        .tour {
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            /* align-items: center;
+            justify-content: center; */
+
+        }
+
+        .tour-info {
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .tour-title {
+            width: 45%;
+            border: 2px solid #f58220;
+        }
+
+        .tour-title-1 {
+            padding: 15px;
+        }
+        .tour-title-1 p {
+            margin: 10px 0;
+        }
+        .tour-title-1 ul {
+            margin: 0 20px;
+        }
+        .tour-title-1 ul li {
+            margin: 5px 0;
+        }
+        .tour-fr-price {
+            background-color: #f58220;
+            padding: 15px;
+        }
+        .tour-price h2 {
+            color: #fff;
+            margin-left: 20px;
+        }
+
+        .tour-content{
+            width: 53%;
+            border: 2px solid #f58220;
+        }
+
+        .tour-content-title {
+            padding: 15px 15px 0 15px;
+        }
+        .tour-content-text {
+            padding: 15px;
+            text-align: justify;
+        }
+        .tour-content-text h3 {
+            padding: 10px 0;
+        }
+        .tour-content-text ul {
+            margin-left: 30px;
+        }
+        .tour-content-text ul li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <p><a href="/qp133.github.io/Web/day_08_finalTest/index.html">SHIBA TOURISTS</a></p>
+        </div>
+
+        <div class="sidebar">
+            <div class="header-menu">
+                <ul>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/index.html">TRANG CHỦ</a></li>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/duLichTrongNuoc.html">DU LỊCH TRONG NƯỚC</a></li>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/duLichNuocNgoai.html">DU LỊCH NƯỚC NGOÀI</a></li>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/blog.html">BLOG</a></li>
+                </ul>
+            </div>
+            
+            <!-- Avatar -->
+            <div class="avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="tour">
+            <div class="owl-carousel">
+                <div class="banner">
+                    <img src="https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Tour image">
+                </div>
+        
+                <div class="banner">
+                    <img src="https://images.unsplash.com/photo-1547150492-da7ff1742941?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Tour image">
+                </div>
+        
+                <div class="banner">
+                    <img src="https://images.unsplash.com/photo-1598405189334-d56f20a107de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Tour image">
+                </div>
+            </div>
+            <div class="tour-info">
+                <div class="tour-title">
+                    <div class="tour-title-1">
+                        <h2>Hà Nội - Trung Quốc 5 ngày 4 đêm</h2>
+                        <p><b>Thông tin tour:</b></p>
+                        <ul>
+                            <li>Mã tour: 15102</li>
+                            <li>Thời gian: 5 ngày 4 đêm</li>
+                            <li>Khởi hành: 10/7 – 30/7/2022</li>
+                            <li>Vận chuyển: Xe du lịch, Máy bay</li>
+                            <li>Xuất phát từ: Hà Nội</li>
+                        </ul>
+                    </div>
+                    <div class="tour-title-2">
+                        <div class="tour-fr-price">
+                            <div class="tour-price">
+                                <h2>Giá từ 14,490,000đ</h2>
+                            </div>
+                            <div class="more-info">
+                                <button class="learn-more-1">
+                                    <a href="https://dantri.com.vn">
+                                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                                        <p class="button-text">ĐẶT TOUR</p>
+                                    </a>
+                                </button>
+                                <button class="learn-more-1">
+                                    <a href="https://dantri.com.vn">
+                                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                                        <p class="button-text">HỖ TRỢ</p>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-content">
+                    <div class="tour-content-title">
+                        <h2>Lịch trình:</h2>
+                    </div>
+                    <div class="tour-content-text">
+                        <h3>NGÀY 1: HÀ NỘI - TRƯƠNG GIA GIỚI</h3>
+                        <ul>
+                            <li>14h45: Xe và hướng dẫn viên đón Quý khách tại điểm hẹn và đưa Quý khách ra sân bay Quốc tế Nội Bài, đáp chuyến bay VJ7866 (17h45 – 21h30) đi Trương Gia Giới.</li>
+                            <li>21h30: Đến Trương Gia Giới, xe đón Quý khách đưa về khách sạn nhận phòng, nghỉ ngơi.
+                                Do đến Trương Gia Giới muộn nên không kịp ăn tại nhà hàng. Quý khách vui lòng tự túc chuẩn bị đồ ăn tối sẵn từ nhà.</li>
+                        </ul>
+                        <h3>NGÀY 2: TRƯƠNG GIA GIỚI - PHƯỢNG HOÀNG CỔ TRẤN</h3>
+                        <ul>
+                            <li>Sáng: Sau bữa sáng, đoàn trải nghiệm “tuyến cáp treo dài nhất tại một ngọn núi cao nhất trên thế giới với 98 cabin, dài 7400 mét, cao 1.279 mét tham quan Thiên Môn Sơn.  Từ cáp treo Quý khách có thể ngắm toàn cảnh thị trấn và cảnh rừng núi nguy nga tráng lệ. Nơi đây cũng là nơi nhiều lần biểu diễn máy bay xuyên động Thiên Môn và đua nhảy dù quốc tế.
+                                <ul>
+                                    <li>Khi lên tới đỉnh của Thiên Môn Sơn, Quý khách sẽ đi theo con đường bao quanh những đỉnh núi, xuyên từ đỉnh núi này sang đỉnh núi khác. Một bên là núi, một bên là mây, thỉnh thoảng có thêm những lá bùa may mắn màu đỏ rực rỡ sẽ khiến Quý khách cảm thấy lạc như lạc vào chốn bồng lai tiên cảnh, như đang đi trên 9 tầng mây của thiên đường.</li>
+                                    <li>Tham quan Sạn Đạo Kính, đi bộ trên con đường bằng kính trên vách núi đá để thử lòng can đảm của mình.</li>
+                                    <li>Quý khách đi qua hệ thống thang cuốn đồ sộ trong lòng núi để đến Cổng Trời - nơi giao thoa giữa trời và đất.</li>
+                                    <li>Sau đó, đoàn đi ô tô xuống núi, trải nghiệm cảm giác mạnh trên cung đường 99 khúc cua ngoạn mục nhất thế giới.</li>
+                                </ul>
+                            </li>
+                            <li>Sau bữa trưa, đoàn lên xe khởi hành đi Phượng Hoàng Cổ Trấn.</li>
+                            <li>Sau bữa tối đoàn tự do khám phá cảnh sắc của Phượng Hoàng Cổ Trấn về đêm.</li>
+                            <li>Nghỉ đêm tại Phượng Hoàng Cổ Trấn</li>
+                        </ul>
+                        <h3>NGÀY 3: THAM QUAN PHƯỢNG HOÀNG CỔ TRẤN</h3>
+                        <ul>
+                            <li>Sáng: Quý khách ăn sáng tại khách sạn, sau đó, Quý khách:
+                                <ul>
+                                    <li>ham quan Phượng Hoàng Cổ Trấn, với lầu Miêu Miêu, Bắc Môn cổ thành,  Lầu Phong Thúy Hồng Kiều, Viện bảo tàng Cổ Thành…(tham quan bên ngoài). Chụp hình tại Cung Vạn Thọ, Tháp Vạn Danh. Có rất nhiều cây cầu bằng gỗ, bằng đá nối hai bờ sông Đà Giang, đặc biệt là cầu Hồng Kiều duyên dáng với kiến trúc độc đáo theo phong cách rất “Phượng Hoàng”. Đứng từ bên đây cầu nhìn sang phía bên kia cầu, bạn sẽ thấy thấp thoáng Phượng Hoàng cổ trấn trải dài với những ngõ sâu hun hút, những ngôi nhà rêu phong với mái ngói cổ âm dương dày đặc, màu xám như đá tai mèo. Những tượng phù điêu trên đầu mái cong vút một cách đầy kiêu hãnh.</li>
+                                </ul>
+                            </li>
+                            <li>Ăn trưa tại nhà hàng.</li>
+                            <li>Chiều: Tự do thăm quan và khám phá Phượng Hoàng Cổ Trấn với các món ăn địa phương, tự do chụp hình hoặc ngồi uống cà phê, nghe những bản nhạc trữ tình, ngắm cảnh thị trấn cổ dọc sông Đà Giang và cảm nhận cuộc sống yên bình nơi đây, bạn sẽ cảm giác như quên hết mệt mỏi và bỏ lại sau lưng những lo toan vất vả của cuộc sống. Bạn cũng có thể tự túc thưởng ngoạn trên một chiếc thuyền nhỏ để thả lừng lờ trôi dọc theo sông, ngắm nhìn cuộc sống của người dân hai bên bờ, chui qua những cây cầu sẽ thấy rất thú vị. 
+                                Quý khách dùng bữa tối tại nhà hàng. Nghỉ đêm tại khách sạn ở Phượng Hoàng.</li>
+                        </ul>
+                        <h3>NGÀY 4: VŨ LĂNG NGUYÊN</h3>
+                        <ul>
+                            <li>Sau bữa sáng quý khách lên xe về Trương Gia Giới tham quan:
+                                <ul>
+                                    <li>Phù Dung Trấn – một thị trấn cổ của người Thổ Gia đã có hơn 2000 năm lịch sử, được mệnh danh là thị trấn treo trên thác nước. Đến thị trấn Phù Dung, dạo bước trên đường phố trải đá xanh sẽ khiến ta lạc trong cảnh đẹp mơ màng, cảm nhận những nét độc đáo của thị trấn này. Những đường phố, nếp nhà sàn, tường khắc hoa khi ẩn khi hiện dưới ánh chiều tà. Tại đây, du khách được tận mắt chứng kiến nền văn vật cấp quốc gia, khám phá được nền văn hóa dân tộc đặc sắc của người Thổ Gia, có cơ hội thưởng thức điệu múa cổ xưa Mao-cu-sư tái hiện đời sống sinh hoạt hàng ngày như săn bắt, cày cấy, sinh hoạt… của tổ tiên người Thổ Gia.</li>
+                                </ul>
+                            </li>
+                            <li>Đoàn ăn trưa tại nhà hàng. Sau bữa trưa đoàn lên xe tiếp tục khởi hành về Trương Gia Giới</li>
+                            <li>Tham quan nhà kỹ thuật 5D, xem phim ‘Ký ức đại Tương Tây‘. Xong quý khách có thể tự phí đi thăm Cầu kính Thiên Vân Độ - Cầu kính dài nhất thế giới.</li>
+                            <li>Đoàn thăm quan và mua sắm tại cửa hàng trà và nhà thuốc.</li>
+                            <li>Sau bữa tối Qúy khách tự phí xem chương trình biểu diễn đặc sắc "Rạng Rỡ Tương Tây" hoặc ‚"Trương Gia Giới Thiên Cổ Tình" (chi phí tự túc)</li>
+                            <li>Quý khách nghỉ đêm tại Vũ Lăng Nguyên.</li>
+                        </ul>
+                        <h3>NGÀY 5: VŨ LĂNG NGUYÊN</h3>
+                        <ul>
+                            <li>Sáng: Sau bữa sáng tại khách sạn, quý khách sẽ tham quan cửa hàng ngọc đá quý, cửa hàng tơ lụa để tìm hiểu về văn hóa Ngọc và văn hóa tơ lụa của Trung Quốc.
+                                <ul>
+                                    <li>Sau đó đi thăm "Thế giới băng tuyết mộng mơ", quý khách tha hồ trải nghiệm trượt tuyết.</li>
+                                    <li>Đoàn tham quan Bách Trạng Hiệp - Chiến trường cổ xưa.</li>
+                                    <li>Ghé tham quan “Họa viện Quân Thanh” – là nơi trưng bày  tranh nghệ thuật Hồ Nam, đến đây Quý khách được chiêm ngưỡng những tác phẩm nghệ thuật đặc sắc được chế tác từ vật liệu tự nhiên như cát, mảnh đá, cây cỏ thiên nhiên… tạo nên các bức tranh tuyệt đẹp với các cảnh quan thu nhỏ của đất nước Trung Hoa.</li>
+                                </ul>
+                            </li>
+                            <li>Đoàn ăn tối tại nhà hàng. Sau đó ra sân bay đón chuyến bay VJ7867(22:15 – 00:15) về Hà Nội.</li>
+                            <li>Về đến Nội Bài, xe đón đoàn đưa về điểm hẹn tại Hà Nội. Kết thúc chương trình!</li>
+                            <li>Hẹn gặp lại Quý khách trong các chương trình du lịch tiếp theo.</li>
+                            <li>Lưu ý: Thứ tự tham quan có thể thay đổi tùy tình hình thực tế mà không làm thay đổi lịch trình và chất lượng dịch vụ.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="email-promo">
+        <p class="email-text">Hãy để lại email để nhận được những thông tin ưu đãi tốt nhất!</p>
+        <div class="email-button">
+            <input type="text" class="emailPromo" placeholder="Nhập email">
+            <button type="submit" class="email-register">Đăng ký ngay!</button>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-frame">
+
+            <div class="fcontent">
+                <h4 class="title-1">shiba tourist</h4>
+                <div class="content-footer">
+                    <ul>
+                        <li><p><b>Công ty TNHH Du lịch Shiba</b></p></li>
+                        <li><p>Website: shibatourist.com.vn</p></li>
+                        <li><p>GIẤY PHÉP KINH DOANH</p></li>
+                        <li><p>Số GP/ No: 79-042/ 2022/ TCDL – GPLHQT</p></li>
+                        <li><p>Do Tổng Cục Du Lịch cấp ngày 29/5/2022</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">thông tin</h4>
+                <div class="content-footer">
+                    <ul>
+                        <li><p><a href="">Tạp chí du lịch</a></p></li>
+                        <li><p><a href="">Cẩm nang du lịch</a></p></li>
+                        <li><p><a href="">Tin tức</a></p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">hỗ trợ</h4>
+                <div class="content-footer">
+                    <ul>
+                        <ul>
+                            <li><p><a href="">Chính sách đặt tour</a></p></li>
+                            <li><p><a href="">Chính sách bảo mật</a></p></li>
+                            <li><p><a href="">Trợ giúp</a></p></li>
+                            <li><p><a href="">Tuyển dụng</a></p></li>
+                            <li><p><a href="">Về chúng tôi</a></p></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">địa chỉ</h4>
+                <div class="content-footer">
+                    <div class="last-content-footer">
+                        <ul>
+                            <li><p>Trụ sở chính: 239A Hoàng Văn Thụ, Phường 8, Quận Phú Nhuận, TP. Hồ Chí Minh.</p></li>
+                            <li><p>Chi nhánh Hà Nội: 44 Tràng Tiền, Quận Hoàn Kiếm, Hà Nội</p></li>
+                            <li><p>Điện thoại: 028 73056789</p></li>
+                            <li><p> Hotline: 1900 1177</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">kết nối</h4>
+                <div class="content-footer">
+                    <div class="last-content-footer">
+                        <ul class="ul-footer">
+                            <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <h4 class="title-1 last-f-title">chứng nhận</h4>
+                <div class="content-footer">
+                    <div class="last-content-footer">
+                        <ul class="ul-footer-1">
+                            <li><img src="https://dulichviet.com.vn/images/dmca.png" alt="DMCA-certificate" class="footer-icon"></li>
+                            <li><img src="https://dulichviet.com.vn/images/congthuong.png" alt="BCT-certificate" class="footer-icon"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="bottom-page">
+        <div class="copyright">
+            <p>© Copyright 2022 by <a href="./index.html">SHIBATOURIST</a>. All Rights Reserved</p>
+        </div>
+        <div class="copyright-name">
+            <p>Web desgined by QP</p>
+        </div>
+    </div>
+
+    <!-- Link JS của thư viện -->
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            items: 1,
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <!-- Link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Link CSS thư viện -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link CSS tự viết -->
+    <link rel="stylesheet" href="/qp133.github.io/Web/day_08_finalTest/Tours/TourTrongNuoc/style.css">
+
+    <style>
+        .container {
+            padding-top: 80px;
+            margin: 0 80px;
+        }
+        .tour {
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            /* align-items: center;
+            justify-content: center; */
+
+        }
+
+        .tour-info {
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .tour-title {
+            width: 45%;
+            border: 2px solid #f58220;
+        }
+
+        .tour-title-1 {
+            padding: 15px;
+        }
+        .tour-title-1 p {
+            margin: 10px 0;
+        }
+        .tour-title-1 ul {
+            margin: 0 20px;
+        }
+        .tour-title-1 ul li {
+            margin: 5px 0;
+        }
+        .tour-fr-price {
+            background-color: #f58220;
+            padding: 15px;
+        }
+        .tour-price h2 {
+            color: #fff;
+            margin-left: 20px;
+        }
+
+        .tour-content{
+            width: 53%;
+            border: 2px solid #f58220;
+        }
+
+        .tour-content-title {
+            padding: 15px 15px 0 15px;
+        }
+        .tour-content-text {
+            padding: 15px;
+            text-align: justify;
+        }
+        .tour-content-text h3 {
+            padding: 10px 0;
+        }
+        .tour-content-text ul {
+            margin-left: 30px;
+        }
+        .tour-content-text ul li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <p><a href="/qp133.github.io/Web/day_08_finalTest/index.html">SHIBA TOURISTS</a></p>
+        </div>
+
+        <div class="sidebar">
+            <div class="header-menu">
+                <ul>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/index.html">TRANG CHỦ</a></li>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/duLichTrongNuoc.html">DU LỊCH TRONG NƯỚC</a></li>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/duLichNuocNgoai.html">DU LỊCH NƯỚC NGOÀI</a></li>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/blog.html">BLOG</a></li>
+                </ul>
+            </div>
+            
+            <!-- Avatar -->
+            <div class="avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="tour">
+            <div class="owl-carousel">
+                <div class="banner">
+                    <img src="https://images.unsplash.com/photo-1490077476659-095159692ab5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=851&q=80" alt="Tour image">
+                </div>
+        
+                <div class="banner">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Tour image">
+                </div>
+        
+                <div class="banner">
+                    <img src="https://images.unsplash.com/photo-1628324716243-0c9c29971a58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="Tour image">
+                </div>
+            </div>
+            <div class="tour-info">
+                <div class="tour-title">
+                    <div class="tour-title-1">
+                        <h2>Hà Nội - Thái Lan 5 ngày 4 đêm</h2>
+                        <p><b>Thông tin tour:</b></p>
+                        <ul>
+                            <li>Mã tour: 15327</li>
+                            <li>Thời gian: 5 ngày 4 đêm</li>
+                            <li>Khởi hành: 6/6 – 15/6/2022</li>
+                            <li>Vận chuyển: Xe du lịch, Máy bay</li>
+                            <li>Xuất phát từ: Hà Nội</li>
+                        </ul>
+                    </div>
+                    <div class="tour-title-2">
+                        <div class="tour-fr-price">
+                            <div class="tour-price">
+                                <h2>Giá từ 6,290,000đ</h2>
+                            </div>
+                            <div class="more-info">
+                                <button class="learn-more-1">
+                                    <a href="https://dantri.com.vn">
+                                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                                        <p class="button-text">ĐẶT TOUR</p>
+                                    </a>
+                                </button>
+                                <button class="learn-more-1">
+                                    <a href="https://dantri.com.vn">
+                                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                                        <p class="button-text">HỖ TRỢ</p>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-content">
+                    <div class="tour-content-title">
+                        <h2>Lịch trình:</h2>
+                    </div>
+                    <div class="tour-content-text">
+                        <h3>NGÀY 1: HÀ NỘI - BANGKOK - CHỢ NỔI - PATTAYA</h3>
+                        <p>Xe và Hướng dẫn viên đón quý khách tại điểm hẹn,đưa ra sân bay Nội Bài làm thủ tục đáp chuyến bay VJ 901 (12:15-14:05) đi Bangkok. Quý khách ăn trưa tự túc trên máy bay</p>
+                        <p>Đến sân bay Suvarnabhumi, làm thủ tục nhập cảnh, xe và hướng dẫn viên địa phương đón đoàn khởi hành đi Pattaya, trên đường di chuyển quý khách được tham quan:</p>
+                        <ul>
+                            <li>Chợ nổi Bốn miền (Four Regions Floating Market) : Là một trong những chợ nổi Pattaya nổi tiếng nhất, với những món ăn ngon và những kiến trúc thái cổ xưa. Nơi này được chia làm 4 khu vực riêng, mỗi khu vực đại diện cho 4 miền chính của Thái Lan, cũng như buôn bán vật dụng và hàng hóa đến từ 4 khu vực này.</li>
+                        </ul>
+                        <p>Đến Pattaya đoàn Ăn tối tại nhà hàng địa phương.</p>
+                        <ul>
+                            <li>Sau bữa tối, quý khách có thể tự túc trải nghiệm không khí sôi động của Pattaya như Walking Street… xem các show đặc sắc của thiên đường du lịch Pattaya.</li>
+                        </ul>
+                        <p>Nhận phòng và nghỉ đêm khách sạn 3* tại Pattaya.</p>
+                        <h3>NGÀY 2: ĐẢO CORAL - KHAO KHEW ZOO - TRÂN BẢO PHẬT SƠN - VƯỜN NHO HỒ BẠC - ALCAZAR SHOW</h3>
+                        <p>Ăn sáng tại khách sạn, hướng dẫn viên và xe đưa đoàn đi:</p>
+                        <ul>
+                            <li>Đảo Coral – Hòn đảo được bao quanh bởi những rặn san hô đầy màu sắc. Tại đây quý khách có thể tự do tắm biển hoặc tham gia các trò chơi thể thao nước như nhảy dù, trượt nước, jetski, lặn biển, bắn súng… (chi phí tự túc).</li>
+                        </ul>
+                        <p>Ăn trưa tại nhà hàng địa phương. Sau bữa trưa đoàn khởi hành tham quan:</p>
+                        <ul>
+                            <li>Trung tâm đá quý hoàng gia World Gems du khách sẽ được chiêm ngưỡng những sản phẩm tinh tế, điêu luyện được làm từ các loại đá quý như: kim cương, pha lê, hồng ngọc,…. Không chỉ là đá quý, các sản phẩm tại đây đều được các nghệ nhân thả hồn vào đó để nó có sức sống và lôi cuốn khách tham quan.</li>
+                            <li>Phân Viện nghiên cứu các sản phẩm hỗ trợ Giấc Ngủ Modern Latex Hoàng Gia Thái Lan, Tham quan tìm hiểu cách phòng và hỗ trợ điều trị các bệnh liên quan đến cột sống tăng cường thể lực ,cải thiện tuổi thọ con người nâng cao giá trị cuộc sống thiết yếu.</li>
+                            <li>Vui chơi tại Khao Kheow Open Zoo – Vườn Thú Mở: cách trung tâm thành phố Pattaya tầm 50 km nên vườn thú Khao Kheow là điểm du lịch lý tưởng dành cho khách du lịch. Ghé thăm vườn thú, du khách sẽ tận mắt quan sát nhiều loài quen thuộc lẫn xa lạ như ngựa vằn, tê giác, hươu cao cổ, sư tử, hổ,… Ngoài ra còn nhìn thấy vô số loài chim đầy màu sắc hay trải nghiêm cảm giác cưỡi voi hồi hộp, mới lạ. Bên cạnh đó, vườn thú Khao Kheow không chỉ là nơi vui chơi mà còn để giáo dục, nghiên cứu về thế giới tự nhiên</li>
+                            <li>Trân Bảo Phật Sơn - Khao Chee Chan: núi Phật được khắc và đắp bằng vàng 24k, nơi được tạo nên nhân dịp kỷ niệm 50 năm đăng cơ của nhà vua Thái Lan</li>
+                            <li>Vườn nho Hồ Bạc:  một điểm đến tuyệt vời dành cho những ai thích đắm chìm trong không gian yên bình, không khí trong lành và thiên nhiên lãng mạn. Hồ Bạc nằm ngay chính giữa khu vườn nho xanh mát. Điểm đặc biệt ở đây du khách có thể trải nghiệm  thưởng thức nước ép nho ướp lạnh giữa những biệt thự màu gạch đỏ, được xây theo phong cách Châu Âu cổ điển</li>
+                        </ul>
+                        <p>Ăn tối tại nhà hàng địa phương. Sau bữa tối, Quý khách xem chương trình văn nghệ đặc sắc Alcazar show do các nam vũ công chuyển giới biểu diễn. </p>
+                        <p>Nghỉ đêm khách sạn 3* tại Pattaya.</p>
+                        <h3>NGÀY 3: BANGKOK - BUTTERFLY GARDEN - BAIYOKE SKY</h3>
+                        <p>Ăn sáng tại khách sạn. Làm thủ tục trả phòng. Quý khách trở về thủ đô Bangkok. Trên đường đi, xe đưa đoàn đi thăm quan:</p>
+                        <ul>
+                            <li>Nơi trưng bày sản phẩm 3 miền của vương quốc Thái Lan. Qúy khách có thể tự do mua sắm các loại đặc sản như: Mật ong, sữa ong Chúa  tam giác vàng , cao hổ cốt , Huyết Yến đóng hộp được lấy  từ huyết của các con chim Yến rất bổ và lợi ích cho cơ thể.</li>
+                            <li>Trung tâm Yến Huyết Hoàng gia Thái Lan – Butterfly Garden (Vườn Bướm): Vườn bướm như một bức tranh thiên nhiên thu hút với sự xuất hiện của hơn 3.000 loài bướm và nhiều loại côn trùng khác nhau. Đến Butterfly Garden, du khách sẽ có cơ hội tìm hiểu và khám phá về những đặc sản ba miền của đất nước chùa Vàng.</li>
+                        </ul>
+                        <p>Ăn trưa tại Baiyoke Sky – Thưởng thức buffet tại Baiyoke Sky 86 tầng hảo hạng và ngắm thủ đô Bangkok từ trên cao tuyệt đẹp với trải nghiệm thưởng thức buffet tại Baiyoke Sky Hotel.</p>
+                        <ul>
+                            <li>Sau bữa trưa , đoàn tiếp tục hành trình về thủ đô Bangkok. Đoàn đi ăn tối. Sau bữa tối đoàn về khách sạn nhận phòng nghỉ ngơi. Có thể tự do khám phá Bangkok về đêm. Nghỉ đêm khách sạn 3* tại Bangkok.</li>
+                        </ul>
+                        <h3>NGÀY 4: CHÙA NÚI VÀNG - DẠO THUYỀN WAT YAN - WAT ARUN - TƯỢNG PHẬT 4 MẶT - BIGC</h3>
+                        <p>Ăn sáng tại khách sạn. Đoàn khởi hành đi tham quan:</p>
+                        <ul>
+                            <li>Dạo thuyền Wat Yan trên sông ChaoPhraya – con sông của các vị vua, nơi gắn liền với lịch sử của những vương triều hùng mạnh của đất nước Thái. Ngoài ra, sẽ được xem hiện tượng cá Thần nổi trên sông.</li>
+                            <li>Chùa Núi Vàng – Wat Saket: là một ngọn đồi thấp với một bảo tháp bằng vàng lấp lánh. Bên trong, tòa tháp 58m có chứa xá lợi Phật và đón chào tín đồ đến chiêm bái suốt năm. Ngôi chùa cũng tổ chức lễ hằng năm vào tháng 10, diễn ra một tuần trong suốt Loy Krathong (lễ hội thả đèn hoa đăng lên trời)</li>
+                            <li>Thưởng ngoạn và ngắm nhìn Chùa Bình Minh - Wat Arun: ngôi chùa được xem như là một trong những ngồi đền đẹp nhất tại Bangkok . Không chỉ đẹp bởi vị trí nằm ven bờ sông mà còn có sự hấp dẫn của kiến trúc đặc biệt được thiết kế hình tòa tháp đầy màu sắc và đứng uy nghi trên mặt nước sông Chao Pharaya.</li>
+                        </ul>
+                        <p>Ăn trưa tại nhà hàng</p>
+                        <p>Tượng Phật 4 mặt - nổi tiếng nhất thủ đô Bangkok, đến đây quý khách được nghe nhiều câu chuyện kể về lịch sử  ra đời của vị Phật Bốn Mặt rất linh thiêng và huyền bí</p>
+                        <p>Tự do mua sắm va tham quan tại các trung tâm thương mại nổi tiếng của thủ đô như: Big C, Center World Plaza… (Quý khách tự do ăn tối tại Big C)</p>
+                        <p>Nghỉ đêm khách sạn 3* tại Bangkok.</p>
+                        <h3>NGÀY 5: BANGKOK - HANOI</h3>
+                        <p>Sau khi ăn sáng tại khách sạn đoàn làm thủ tục trả phòng, sau đó đi thăm quan:</p>
+                        <ul>
+                            <li>Viện Nghiên Cứu  Rắn Hoàng Gia Thái Lan- thưởng thức màn trình diễn hấp dẫn xiếc rắn, múa rắn, lấy nọc rắn…</li>
+                        </ul>
+                        <p>Đoàn ăn trưa tại nhà hàng.</p>
+                        <p>Đến giờ hẹn, HDV và xe đưa đoàn ra sân bay đáp chuyến bay VJ 902 (15:05-16:55) trở về thành phố Hà Nội. Kết thúc chương trình, chia tay và hẹn gặp lại quý khách.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="email-promo">
+        <p class="email-text">Hãy để lại email để nhận được những thông tin ưu đãi tốt nhất!</p>
+        <div class="email-button">
+            <input type="text" class="emailPromo" placeholder="Nhập email">
+            <button type="submit" class="email-register">Đăng ký ngay!</button>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-frame">
+
+            <div class="fcontent">
+                <h4 class="title-1">shiba tourist</h4>
+                <div class="content-footer">
+                    <ul>
+                        <li><p><b>Công ty TNHH Du lịch Shiba</b></p></li>
+                        <li><p>Website: shibatourist.com.vn</p></li>
+                        <li><p>GIẤY PHÉP KINH DOANH</p></li>
+                        <li><p>Số GP/ No: 79-042/ 2022/ TCDL – GPLHQT</p></li>
+                        <li><p>Do Tổng Cục Du Lịch cấp ngày 29/5/2022</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">thông tin</h4>
+                <div class="content-footer">
+                    <ul>
+                        <li><p><a href="">Tạp chí du lịch</a></p></li>
+                        <li><p><a href="">Cẩm nang du lịch</a></p></li>
+                        <li><p><a href="">Tin tức</a></p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">hỗ trợ</h4>
+                <div class="content-footer">
+                    <ul>
+                        <ul>
+                            <li><p><a href="">Chính sách đặt tour</a></p></li>
+                            <li><p><a href="">Chính sách bảo mật</a></p></li>
+                            <li><p><a href="">Trợ giúp</a></p></li>
+                            <li><p><a href="">Tuyển dụng</a></p></li>
+                            <li><p><a href="">Về chúng tôi</a></p></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">địa chỉ</h4>
+                <div class="content-footer">
+                    <div class="last-content-footer">
+                        <ul>
+                            <li><p>Trụ sở chính: 239A Hoàng Văn Thụ, Phường 8, Quận Phú Nhuận, TP. Hồ Chí Minh.</p></li>
+                            <li><p>Chi nhánh Hà Nội: 44 Tràng Tiền, Quận Hoàn Kiếm, Hà Nội</p></li>
+                            <li><p>Điện thoại: 028 73056789</p></li>
+                            <li><p> Hotline: 1900 1177</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">kết nối</h4>
+                <div class="content-footer">
+                    <div class="last-content-footer">
+                        <ul class="ul-footer">
+                            <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <h4 class="title-1 last-f-title">chứng nhận</h4>
+                <div class="content-footer">
+                    <div class="last-content-footer">
+                        <ul class="ul-footer-1">
+                            <li><img src="https://dulichviet.com.vn/images/dmca.png" alt="DMCA-certificate" class="footer-icon"></li>
+                            <li><img src="https://dulichviet.com.vn/images/congthuong.png" alt="BCT-certificate" class="footer-icon"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="bottom-page">
+        <div class="copyright">
+            <p>© Copyright 2022 by <a href="./index.html">SHIBATOURIST</a>. All Rights Reserved</p>
+        </div>
+        <div class="copyright-name">
+            <p>Web desgined by QP</p>
+        </div>
+    </div>
+
+    <!-- Link JS của thư viện -->
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            items: 1,
+        })
+    </script>
+</body>
+</html>

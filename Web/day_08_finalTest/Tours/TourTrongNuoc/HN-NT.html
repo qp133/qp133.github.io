@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <!-- Link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Link CSS thư viện -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link CSS tự viết -->
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        .container {
+            padding-top: 80px;
+            margin: 0 80px;
+        }
+        .tour {
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            /* align-items: center;
+            justify-content: center; */
+
+        }
+
+        .tour-info {
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .tour-title {
+            width: 45%;
+            border: 2px solid #f58220;
+        }
+
+        .tour-title-1 {
+            padding: 15px;
+        }
+        .tour-title-1 p {
+            margin: 10px 0;
+        }
+        .tour-title-1 ul {
+            margin: 0 20px;
+        }
+        .tour-title-1 ul li {
+            margin: 5px 0;
+        }
+        .tour-fr-price {
+            background-color: #f58220;
+            padding: 15px;
+        }
+        .tour-price h2 {
+            color: #fff;
+            margin-left: 20px;
+        }
+
+        .tour-content{
+            width: 53%;
+            border: 2px solid #f58220;
+        }
+
+        .tour-content-title {
+            padding: 15px 15px 0 15px;
+        }
+        .tour-content-text {
+            padding: 15px;
+            text-align: justify;
+        }
+        .tour-content-text h3 {
+            padding: 10px 0;
+        }
+        .tour-content-text ul {
+            margin-left: 30px;
+        }
+        .tour-content-text ul li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <p><a href="/qp133.github.io/Web/day_08_finalTest/index.html">SHIBA TOURISTS</a></p>
+        </div>
+
+        <div class="sidebar">
+            <div class="header-menu">
+                <ul>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/index.html">TRANG CHỦ</a></li>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/duLichTrongNuoc.html">DU LỊCH TRONG NƯỚC</a></li>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/duLichNuocNgoai.html">DU LỊCH NƯỚC NGOÀI</a></li>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/blog.html">BLOG</a></li>
+                </ul>
+            </div>
+            
+            <!-- Avatar -->
+            <div class="avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="tour">
+            <div class="owl-carousel">
+                <div class="banner">
+                    <img src="https://images.unsplash.com/photo-1597811209390-e674b6a68775?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=877&q=80" alt="Tour image">
+                </div>
+        
+                <div class="banner">
+                    <img src="https://images.unsplash.com/photo-1583333803672-0403650c86b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="Tour image">
+                </div>
+        
+                <div class="banner">
+                    <img src="https://images.unsplash.com/photo-1649035075923-9301d4e01044?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="Tour image">
+                </div>
+            </div>
+            <div class="tour-info">
+                <div class="tour-title">
+                    <div class="tour-title-1">
+                        <h2>Hà Nội - Nha Trang 3 ngày 2 đêm</h2>
+                        <p><b>Thông tin tour:</b></p>
+                        <ul>
+                            <li>Mã tour: 15812</li>
+                            <li>Thời gian: 3 ngày 2 đêm</li>
+                            <li>Khởi hành: 7/6 – 15/6/2022</li>
+                            <li>Vận chuyển: Xe du lịch</li>
+                            <li>Xuất phát từ: Hà Nội</li>
+                        </ul>
+                    </div>
+                    <div class="tour-title-2">
+                        <div class="tour-fr-price">
+                            <div class="tour-price">
+                                <h2>Giá từ 2,390,000đ</h2>
+                            </div>
+                            <div class="more-info">
+                                <button class="learn-more-1">
+                                    <a href="https://dantri.com.vn">
+                                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                                        <p class="button-text">ĐẶT TOUR</p>
+                                    </a>
+                                </button>
+                                <button class="learn-more-1">
+                                    <a href="https://dantri.com.vn">
+                                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                                        <p class="button-text">HỖ TRỢ</p>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-content">
+                    <div class="tour-content-title">
+                        <h2>Lịch trình:</h2>
+                    </div>
+                    <div class="tour-content-text">
+                        <ul>
+                            <li>Combo du lịch Nha Trang  3 ngày 2 đêm ở khách sạn gần trung tâm mang đến mức giá bất ngờ bạn và gia đình sẽ được tận hưởng kỳ nghỉ sang chảnh chuẩn 3 Sao.</li>
+                            <li>Bao gồm 1 vé máy bay khứ hồi từ Hà Nội - Nha Trang của hãng hàng không Bamboo Airways. Vé đã gồm 7kg hành lý xách tay và 20kg hành lý.</li>
+                            <li>02 đêm/ 3 đêm nghỉ tại khách sạn  (Miễn phí bữa sáng).</li>
+                            <li>Combo Nha Trang là một hình thức mang đến cảm giác cho bạn và quý khách không bị gò bó trong những lịch trình tour có sẵn. Du khách thỏa sức lên kế hoạch cho chuyến đi của mình: Ở đâu, ăn gì, chơi như thế nào… lựa chọn đặt combo du lịch Nha Trang chính là phương án tốt nhất để tiết kiệm thời gian, công sức cho khách du lịch mà vẫn không làm chuyến khám phá của quý khách kém đi phần thú vị.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="email-promo">
+        <p class="email-text">Hãy để lại email để nhận được những thông tin ưu đãi tốt nhất!</p>
+        <div class="email-button">
+            <input type="text" class="emailPromo" placeholder="Nhập email">
+            <button type="submit" class="email-register">Đăng ký ngay!</button>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-frame">
+
+            <div class="fcontent">
+                <h4 class="title-1">shiba tourist</h4>
+                <div class="content-footer">
+                    <ul>
+                        <li><p><b>Công ty TNHH Du lịch Shiba</b></p></li>
+                        <li><p>Website: shibatourist.com.vn</p></li>
+                        <li><p>GIẤY PHÉP KINH DOANH</p></li>
+                        <li><p>Số GP/ No: 79-042/ 2022/ TCDL – GPLHQT</p></li>
+                        <li><p>Do Tổng Cục Du Lịch cấp ngày 29/5/2022</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">thông tin</h4>
+                <div class="content-footer">
+                    <ul>
+                        <li><p><a href="">Tạp chí du lịch</a></p></li>
+                        <li><p><a href="">Cẩm nang du lịch</a></p></li>
+                        <li><p><a href="">Tin tức</a></p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">hỗ trợ</h4>
+                <div class="content-footer">
+                    <ul>
+                        <ul>
+                            <li><p><a href="">Chính sách đặt tour</a></p></li>
+                            <li><p><a href="">Chính sách bảo mật</a></p></li>
+                            <li><p><a href="">Trợ giúp</a></p></li>
+                            <li><p><a href="">Tuyển dụng</a></p></li>
+                            <li><p><a href="">Về chúng tôi</a></p></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">địa chỉ</h4>
+                <div class="content-footer">
+                    <div class="last-content-footer">
+                        <ul>
+                            <li><p>Trụ sở chính: 239A Hoàng Văn Thụ, Phường 8, Quận Phú Nhuận, TP. Hồ Chí Minh.</p></li>
+                            <li><p>Chi nhánh Hà Nội: 44 Tràng Tiền, Quận Hoàn Kiếm, Hà Nội</p></li>
+                            <li><p>Điện thoại: 028 73056789</p></li>
+                            <li><p> Hotline: 1900 1177</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">kết nối</h4>
+                <div class="content-footer">
+                    <div class="last-content-footer">
+                        <ul class="ul-footer">
+                            <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <h4 class="title-1 last-f-title">chứng nhận</h4>
+                <div class="content-footer">
+                    <div class="last-content-footer">
+                        <ul class="ul-footer-1">
+                            <li><img src="https://dulichviet.com.vn/images/dmca.png" alt="DMCA-certificate" class="footer-icon"></li>
+                            <li><img src="https://dulichviet.com.vn/images/congthuong.png" alt="BCT-certificate" class="footer-icon"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="bottom-page">
+        <div class="copyright">
+            <p>© Copyright 2022 by <a href="./index.html">SHIBATOURIST</a>. All Rights Reserved</p>
+        </div>
+        <div class="copyright-name">
+            <p>Web desgined by QP</p>
+        </div>
+    </div>
+
+    <!-- Link JS của thư viện -->
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            items: 1,
+        })
+    </script>
+</body>
+</html>

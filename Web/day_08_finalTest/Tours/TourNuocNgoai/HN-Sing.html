@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <!-- Link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Link CSS thư viện -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link CSS tự viết -->
+    <link rel="stylesheet" href="/qp133.github.io/Web/day_08_finalTest/Tours/TourTrongNuoc/style.css">
+
+    <style>
+        .container {
+            padding-top: 80px;
+            margin: 0 80px;
+        }
+        .tour {
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            /* align-items: center;
+            justify-content: center; */
+
+        }
+
+        .tour-info {
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .tour-title {
+            width: 45%;
+            border: 2px solid #f58220;
+        }
+
+        .tour-title-1 {
+            padding: 15px;
+        }
+        .tour-title-1 p {
+            margin: 10px 0;
+        }
+        .tour-title-1 ul {
+            margin: 0 20px;
+        }
+        .tour-title-1 ul li {
+            margin: 5px 0;
+        }
+        .tour-fr-price {
+            background-color: #f58220;
+            padding: 15px;
+        }
+        .tour-price h2 {
+            color: #fff;
+            margin-left: 20px;
+        }
+
+        .tour-content{
+            width: 53%;
+            border: 2px solid #f58220;
+        }
+
+        .tour-content-title {
+            padding: 15px 15px 0 15px;
+        }
+        .tour-content-text {
+            padding: 15px;
+            text-align: justify;
+        }
+        .tour-content-text h3 {
+            padding: 10px 0;
+        }
+        .tour-content-text ul {
+            margin-left: 30px;
+        }
+        .tour-content-text ul li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <p><a href="/qp133.github.io/Web/day_08_finalTest/index.html">SHIBA TOURISTS</a></p>
+        </div>
+
+        <div class="sidebar">
+            <div class="header-menu">
+                <ul>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/index.html">TRANG CHỦ</a></li>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/duLichTrongNuoc.html">DU LỊCH TRONG NƯỚC</a></li>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/duLichNuocNgoai.html">DU LỊCH NƯỚC NGOÀI</a></li>
+                    <li class="header-menu-item"><a href="/qp133.github.io/Web/day_08_finalTest/blog.html">BLOG</a></li>
+                </ul>
+            </div>
+            
+            <!-- Avatar -->
+            <div class="avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="tour">
+            <div class="owl-carousel">
+                <div class="banner">
+                    <img src="https://images.unsplash.com/photo-1574227492706-f65b24c3688a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="Tour image">
+                </div>
+        
+                <div class="banner">
+                    <img src="https://images.unsplash.com/photo-1552790920-0ba96dc99d01?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="Tour image">
+                </div>
+        
+                <div class="banner">
+                    <img src="https://images.unsplash.com/photo-1558289675-f8a783516e7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Tour image">
+                </div>
+            </div>
+            <div class="tour-info">
+                <div class="tour-title">
+                    <div class="tour-title-1">
+                        <h2>Hà Nội - Singapore - Sentosa 4 ngày 3 đêm</h2>
+                        <p><b>Thông tin tour:</b></p>
+                        <ul>
+                            <li>Mã tour: 16116</li>
+                            <li>Thời gian: 4 ngày 3 đêm</li>
+                            <li>Khởi hành: 10/6 – 30/6/2022</li>
+                            <li>Vận chuyển: Xe du lịch, Máy bay</li>
+                            <li>Xuất phát từ: Hà Nội</li>
+                        </ul>
+                    </div>
+                    <div class="tour-title-2">
+                        <div class="tour-fr-price">
+                            <div class="tour-price">
+                                <h2>Giá từ 12,990,000đ</h2>
+                            </div>
+                            <div class="more-info">
+                                <button class="learn-more-1">
+                                    <a href="https://dantri.com.vn">
+                                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                                        <p class="button-text">ĐẶT TOUR</p>
+                                    </a>
+                                </button>
+                                <button class="learn-more-1">
+                                    <a href="https://dantri.com.vn">
+                                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                                        <p class="button-text">HỖ TRỢ</p>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-content">
+                    <div class="tour-content-title">
+                        <h2>Lịch trình:</h2>
+                    </div>
+                    <div class="tour-content-text">
+                        <h3>NGÀY 1: HÀ NỘI - SINGAPORE</h3>
+                        <ul>
+                            <li>Sáng: 04h30: Xe và HDV đón Quý khách tại điểm hẹn, khởi hành ra sân bay quốc tế Nội Bài làm thủ tục đáp chuyến bay VN661 lúc 07h35 đi Singapore. Quý khách cần chuẩn bị đủ giấy tờ như thông tin bên dưới:
+                                <ul>
+                                    <li>Hộ chiếu còn hạn 6 tháng kể từ ngày khởi hành</li>
+                                    <li>Chứng nhận Vaccine: Link khai báo chọn sang tiếng Anh để lấy được chứng nhận - https://tiemchungcovid19.gov.vn/portal/portal-report. (Khách hàng cung cấp)</li>
+                                    <li>Bảo Hiểm Covid và Bảo hiểm Du lịch. (CTDL cung cấp)</li>
+                                    <li>Vaccinated Travel Pass - https://safetravel.ica.gov.sg. (CTDL cung cấp)</li>
+                                    <li>Singapore Arrival Card - khai trước 1 ngày khi khởi hành - https://eservices.ica.gov.sg/sgarrivalcard/ (CTDL cung cấp)</li>
+                                    <li>Chứng nhận âm tính bằng cách Test PCR hoặc test nhanh trước 24h so với giờ nhập cảnh vào Sing có đóng dấu đỏ của cơ sở y tế (Bản song ngữ). Quý khách tự thực hiện test trước ngày bay tại các cơ sở y tế.</li>
+                                    <li>Tải App: Trace Together, kích hoạt luôn ở Việt Nam, sau khi nhập cảnh hải quan sẽ trả email thông báo active tài khoản để quét mã bắt buộc mỗi khi đi vào các điểm Du lịch và Nhà Hàng...</li>
+                                </ul>
+                            </li>
+                            <li>Trưa: 11h55: Chuyến bay hạ cánh tại sân bay quốc tế Changi – Singapore - sân bay được mệnh danh là sân bay tuyệt vời nhất thế giới với 06 khu vườn bách thảo, được trang bị đầy đủ dịch vụ như phòng nghe nhạc, hồ bơi, khu giải trí, khách sạn, trung tâm mua sắm…. Đoàn làm thủ tục nhập cảnh. Xe và hướng dẫn địa phương đón quý khách tham quan:
+                                <ul>
+                                    <li>Công viên sư tử biển Merlion Park: tìm hiểu lịch sử hình thành biểu tượng sư tử biển nổi tiếng, mang đến thịnh vượng cho nơi này</li>
+                                    <li>Ngắm nhìn các công trình kiến trúc tiêu biểu của thành phố: Tòa nhà Quốc hội, Tòa Án Tối Cao, Tòa Thị Chính, Nhà hát “Trái Sầu Riêng – Esplanade”, Vịnh Marina Bay, ...</li>
+                                    <li>Đỉnh Mount Faber: ngắm toàn cảnh đất nước Singapore xinh đẹp</li>
+                                </ul>
+                            </li>
+                            <li>Tối: Đoàn đi ăn tối tại nhà hàng. Sau bữa tối, xe đưa đoàn về khách sạn nhận phòng nghỉ ngơi. Nghỉ đêm tại khách sạn 3*-4* tại Singapore. Quý khách tự do khám phá thành phố về đêm hoặc đăng ký tham gia chương trình Singapore By Night (Chi phí tự túc, Giá tham khảo SGD$50/Adult, SGD$45/Child):
+                                <ul>
+                                    <li>Ngồi thuyền du ngoạn trên sông, vừa chiêm ngưỡng ánh đèn mầu rực rỡ của tập hợp các quán Bar, trung tâm mua sắm hai bên bờ sông, vừa lắng nghe câu chuyện kỳ bí về lịch sử đảo Quốc Sư Tử</li>
+                                    <li>Một lần đến khu phức hợp Suntec City để hiểu rõ hơn về sự tuyệt vời của nghệ thuật phong thủy Singapore.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="email-promo">
+        <p class="email-text">Hãy để lại email để nhận được những thông tin ưu đãi tốt nhất!</p>
+        <div class="email-button">
+            <input type="text" class="emailPromo" placeholder="Nhập email">
+            <button type="submit" class="email-register">Đăng ký ngay!</button>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-frame">
+
+            <div class="fcontent">
+                <h4 class="title-1">shiba tourist</h4>
+                <div class="content-footer">
+                    <ul>
+                        <li><p><b>Công ty TNHH Du lịch Shiba</b></p></li>
+                        <li><p>Website: shibatourist.com.vn</p></li>
+                        <li><p>GIẤY PHÉP KINH DOANH</p></li>
+                        <li><p>Số GP/ No: 79-042/ 2022/ TCDL – GPLHQT</p></li>
+                        <li><p>Do Tổng Cục Du Lịch cấp ngày 29/5/2022</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">thông tin</h4>
+                <div class="content-footer">
+                    <ul>
+                        <li><p><a href="">Tạp chí du lịch</a></p></li>
+                        <li><p><a href="">Cẩm nang du lịch</a></p></li>
+                        <li><p><a href="">Tin tức</a></p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">hỗ trợ</h4>
+                <div class="content-footer">
+                    <ul>
+                        <ul>
+                            <li><p><a href="">Chính sách đặt tour</a></p></li>
+                            <li><p><a href="">Chính sách bảo mật</a></p></li>
+                            <li><p><a href="">Trợ giúp</a></p></li>
+                            <li><p><a href="">Tuyển dụng</a></p></li>
+                            <li><p><a href="">Về chúng tôi</a></p></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">địa chỉ</h4>
+                <div class="content-footer">
+                    <div class="last-content-footer">
+                        <ul>
+                            <li><p>Trụ sở chính: 239A Hoàng Văn Thụ, Phường 8, Quận Phú Nhuận, TP. Hồ Chí Minh.</p></li>
+                            <li><p>Chi nhánh Hà Nội: 44 Tràng Tiền, Quận Hoàn Kiếm, Hà Nội</p></li>
+                            <li><p>Điện thoại: 028 73056789</p></li>
+                            <li><p> Hotline: 1900 1177</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <h4 class="title-1">kết nối</h4>
+                <div class="content-footer">
+                    <div class="last-content-footer">
+                        <ul class="ul-footer">
+                            <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <h4 class="title-1 last-f-title">chứng nhận</h4>
+                <div class="content-footer">
+                    <div class="last-content-footer">
+                        <ul class="ul-footer-1">
+                            <li><img src="https://dulichviet.com.vn/images/dmca.png" alt="DMCA-certificate" class="footer-icon"></li>
+                            <li><img src="https://dulichviet.com.vn/images/congthuong.png" alt="BCT-certificate" class="footer-icon"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="bottom-page">
+        <div class="copyright">
+            <p>© Copyright 2022 by <a href="./index.html">SHIBATOURIST</a>. All Rights Reserved</p>
+        </div>
+        <div class="copyright-name">
+            <p>Web desgined by QP</p>
+        </div>
+    </div>
+
+    <!-- Link JS của thư viện -->
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            items: 1,
+        })
+    </script>
+</body>
+</html>
