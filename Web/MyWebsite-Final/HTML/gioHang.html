@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+
+    <link rel="stylesheet" href="/MyWebsite-Final/CSS/style.css" type="text/css">
+
+    <style>
+        .product-frame {
+            height: 100%;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        .title-product-frame {
+            height: 50px;
+            border-bottom: 1px solid red;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+        .title-product-name {
+            display: inline-block;
+            margin: 15px 0;
+            text-transform: uppercase;
+            color: #ff7700;
+        }
+        .info-frame{
+            background-color: #eeeeee;
+            height: 100%;
+            margin-top: 20px;
+        }
+        .info-title{
+            width: 100%;
+            height: 50px;
+            float: right;
+        }
+        .info-title ul{
+            list-style: none;
+            margin: 17px 30px 17px 250px;
+        }
+        .info-title ul li{
+            display: inline-block;
+            margin: 0 65px;
+            font-weight: bold;
+        }
+        .info-buying{
+            list-style: none;
+            margin: 17px 30px 17px 100px;
+        }
+        .info-buying li{
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .info-buying li img{
+            width: 120px;
+            height: 120px;
+            margin-right: 95px;
+        }
+        .info-buying .price-name{
+            width: 100px;
+        }
+        .info-buying .price-info-1{
+            margin: 0 130px;
+        }
+        .price-info-2{
+            margin: 0 25px;
+        }
+        .price-info-3{
+            margin-left: 140px;
+        }
+        .total-price{
+            height: 50px;
+            padding-top: 20px;
+            margin-left: 950px;
+        }
+        .bt-1{
+            background-color: #f7931e;
+            border: 1px solid #f7931e;
+            border-radius: 3px;
+            width: 300px;
+            height: 50px;
+            margin-left: 525px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+        .bt-1 a{
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+        .bt-2{
+            background-color: #f55220;
+            border: 1px solid #f55220;
+            border-radius: 3px;
+            width: 300px;
+            height: 50px;
+        }
+        .bt-2 a{
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo-1" src="/MyWebsite-Final/images/Logo/logo-header-1.png"></a>
+        <a href="index.html"><img class="logo-2" src="/MyWebsite-Final/images/Logo/logo-header-2.png"></a>
+        <a href="index.html"><img class="slogan" src="/MyWebsite-Final/images/Logo/text-header.png"></a>
+    </header>
+
+    <nav>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="nguyenLieuNhaBep.html">Nguyên liệu nhà bếp</a>
+                    <ul>
+                        <li><a href="NLNB-nguyenLieuNauAn.html">Nguyên liệu nấu ăn</a></li>
+                        <li><a href="NLNB-nguyenLieuLamBanh.html">Nguyên liệu làm bánh</a></li>
+                        <li><a href="NLNB-giaViNauAn.html">Gia vị nấu ăn</a></li>
+                    </ul>
+                </li>
+                <li><a href="doDungNhaBep.html">Đồ dùng nhà bếp</a></li>
+                <li><a href="mayMocThietBi.html">Máy móc, thiết bị</a></li>
+                <li><a href="gioHang.html">Giỏ hàng</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="lienHe.html">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="Bạn tìm gì ở Shiba?...">
+            <button><a href="index.html">Tìm kiếm</a></button>
+        </div>
+    </nav>
+
+    <div id="container">
+        <div class="product-frame">
+            <div class="title-product-frame">
+                <h2 class="title-product-name">giỏ hàng</h2>
+            </div>
+        </div>
+        <p>Đơn hàng tối thiểu 200,000đ có thể đặt hàng Online và được miễn phí Ship.</p>
+        <div class="info-frame">
+            <div class="info-title">
+                <ul>
+                    <li>Tên sản phẩm</li>
+                    <li>Đơn giá</li>
+                    <li>Số lượng</li>
+                    <li>Thành tiền</li>
+                </ul>
+            </div>
+            <hr>
+            <ul class="info-buying">
+                <li class="info-buying-img"><img src="/MyWebsite-Final/images/Products/nguyenLieuNhaBep/sot-thi-bo-barilla-bolognese.jpg" alt=""></li>
+                <li class="price-name">Sốt thịt Barilla Bolognese 400g</li>
+                <li class="price-info-1">128.000đ</li>
+                <li class="price-info-2">x1</li>
+                <li class="price-info-3">128.000đ</li>
+            </ul>
+            <hr>
+            <ul class="info-buying">
+                <li class="info-buying-img"><img src="/MyWebsite-Final/images/Products/nguyenLieuNhaBep/nguyenLieuLamBanh/Pho-mai-Teama-120g.jpg" alt=""></li>
+                <li class="price-name">Phô mai Teama 120g</li>
+                <li class="price-info-1">35.000đ</li>
+                <li class="price-info-2">x1</li>
+                <li class="price-info-3">35.000đ</li>
+            </ul>
+            <hr>
+        </div>
+        <h3 class="total-price">Tổng tiền: 163.000đ</h3>
+        <button class="bt-1">
+            <a href="#thanhtoan">Tiếp tục mua hàng</a>
+        </button>
+        <button class="bt-2">
+            <a href="/MyWebsite-Final/HTML/index.html">Tiến hành đặt hàng</a>
+        </button>
+    </div>
+
+
+
+    <div id="sidebar">
+        <div class="inside-sidebar">
+
+            <div class="frames">
+                <div class="frame-work">
+                    <div class="content">
+                        <h4>Giao hàng đúng giờ</h4>
+                    </div>
+                    <div class="icon">
+                        <img src="/MyWebsite-Final/images/Icon/checked-icon.png" alt="Giao hàng đúng giờ">
+                    </div>
+                </div>
+            </div>
+
+            <div class="frames">
+                <div class="frame-work">
+                    <div class="icon">
+                        <img src="/MyWebsite-Final/images/Icon/checked-icon.png"
+                            alt="Miễn phí đổi trả trong 7 ngày">
+                    </div>
+                    <div class="content">
+                        <h4>Miễn phí đổi trả 7 ngày</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="frames">
+                <div class="frame-work">
+                    <div class="icon">
+                        <img src="/MyWebsite-Final/images/Icon/checked-icon.png" alt="Ưu đãi hấp dẫn mỗi ngày">
+                    </div>
+                    <div class="content">
+                        <h4>Ưu đãi hấp dẫn mỗi ngày</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="frames">
+                <div class="frame-work">
+                    <div class="icon">
+                        <img src="/MyWebsite-Final/images/Icon/checked-icon.png" alt="Cam kết chất lượng">
+                    </div>
+                    <div class="content">
+                        <h4>Cam kết về chất lượng</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <footer>
+        <div class="logo-footer">
+            <img src="/MyWebsite-Final/images/Logo/logo-footer.png" alt="Logo Footer">
+        </div>
+        <div class="footer-list">
+            <h4>GIỚI THIỆU</h4>
+            <ul>
+                <li><img src="/MyWebsite-Final/images/Icon/footer-arrow.png" alt="Footer Arrow"><a href="index.html">Trang chủ</a></li>
+                <li><img src="/MyWebsite-Final/images/Icon/footer-arrow.png" alt="Footer Arrow"><a href="nguyenLieuNhaBep.html">Nguyên liệu nhà bếp</a></li>
+                <li><img src="/MyWebsite-Final/images/Icon/footer-arrow.png" alt="Footer Arrow"><a href="doDungNhaBep.html">Đồ dùng nhà bếp</a></li>
+                <li><img src="/MyWebsite-Final/images/Icon/footer-arrow.png" alt="Footer Arrow"><a href="mayMocThietBi.html">Thiết bị, máy móc</a></li>
+                <li><img src="/MyWebsite-Final/images/Icon/footer-arrow.png" alt="Footer Arrow"><a href="Blog.html">BLOG</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-list">
+            <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+            <ul>
+                <li><img src="/MyWebsite-Final/images/Icon/footer-arrow.png" alt="Footer Arrow"><a href="SUPPORT-huongDanMuaHang.html">Hướng dẫn mua hàng</a></li>
+                <li><img src="/MyWebsite-Final/images/Icon/footer-arrow.png" alt="Footer Arrow"><a href="SUPPORT-phuongThucThanhToan.html">Phương thức thanh toán</a></li>
+                <li><img src="/MyWebsite-Final/images/Icon/footer-arrow.png" alt="Footer Arrow"><a href="SUPPORT-chinhSachBaoHanh.html">Chính sách bảo hành</a></li>
+                <li><img src="/MyWebsite-Final/images/Icon/footer-arrow.png" alt="Footer Arrow"><a href="SUPPORT-chinhSachDoiTra.html">Chính sách đổi trả</a></li>
+                <li><img src="/MyWebsite-Final/images/Icon/footer-arrow.png" alt="Footer Arrow"><a href="SUPPORT-heThongCuaHang.html">Hệ thống cửa hàng</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-list">
+                <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                <ul class="social-icon">
+                    <li><a href=""><img src="/MyWebsite-Final/images/Icon/facebook-icon.png" alt="Footer Arrow"></a></li>
+                    <li><a href=""><img src="/MyWebsite-Final/images/Icon/ig-icon.png" alt="Footer Arrow"></a></li>
+                    <li><a href=""><img src="/MyWebsite-Final/images/Icon/youtube-icon.png" alt="Footer Arrow"></a></li>
+                    <li><a href=""><img src="/MyWebsite-Final/images/Icon/tiktok-icon.png" alt="Footer Arrow"></a></li>
+                </ul>
+                <ul class="download-icon">
+                    <li><a href="#"><img src="/MyWebsite-Final/images/Icon/App-store-icon.png" alt="App Store Icon"></img></a></li>
+                    <li><a href="#"><img src="/MyWebsite-Final/images/Icon/CH-play-icon.png" alt="CH Play Icon"></img></a></li>
+                </ul>
+        </div>    
+    </footer>
+        
+    <div id="bottom-page">
+        <div class="copyright">
+            <p>© Copyright 2021 by <a href="">ShibaMart</a>. All Rights Reserved</p>
+        </div>
+        <div class="copyright-name">
+            <p>Web desgined by QP</p>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
